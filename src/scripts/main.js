@@ -1,4 +1,6 @@
 "use strict";
+import { gsap } from "gsap";
+
 const btnPrev = document.querySelector(".slider__btn--prev"),
       btnnext = document.querySelector(".slider__btn--next");
 
@@ -77,3 +79,14 @@ function toggleNavigation(){
 
 
 
+gsap.timeline({
+    scrollTrigger: {
+      trigger: ".",
+      start: "",
+      end: "",
+      scrub: true,
+      pin: true
+    }
+  })
+    .from(".midsole",  { y: innerHeight * 1.5 })
+    .from(".outsole", { y: innerHeight * 1.5 });
