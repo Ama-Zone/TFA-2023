@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  
   <meta name="description" content="Présentaion du projet AnimaAide pour le TFA">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="amandine-zone.be">
@@ -24,10 +23,13 @@
   <meta property="og:image:height" content="945">
   <!-- Favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Judson&family=Lato:wght@100;300;400;700;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/app.css">
 
-  <script src="scripts/app.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 <body>
 
@@ -221,7 +223,53 @@
 
     <div></div>
 
-    <div>slider</div>
+
+
+    <div class="slider">
+			<ul class="grid slider__control">
+				<li class="slider__btn slider__btn--prev"><button>prev</button></li>
+				<li class="slider__btn slider__btn--next"><button>next</button></li>
+			</ul>
+
+			<div class="slider__list">
+					<div class="grid slider__el slider__el--show">
+						<div class="slider__content">
+							<h3 class="title">Pour les dépôts de plaintes</h3>
+							<ul>
+                <li>Un moyen de contact;</li>
+                <li>Une description de la situation;</li>
+                <li>Si possible, des photos/vidéos des actes de maltraitances; (en respectant la vie d’autrui)</li>
+                <li>Combien d'animaux y a t’il;</li>
+                <li>Quel genre d’animaux.</li>
+              </ul>
+						</div>
+            <img src="" alt="cercle pour montrer le premier slider">
+					</div>
+
+
+					<div class="grid slider__el">
+						<div class="slider__content">
+							<h3 class="title">Pour l’adoption</h3>
+							<ul>
+                <li>Ils habite dans une maison ou un appartement;</li>
+                <li>Ils y a un jardin;</li>
+                <li>Leur activité;</li>
+                <li>Si aboiement les dérangent;</li>
+                <li>Combien d’enfant ont ils;</li>
+                <li>Ils ont déjà des animaux;</li>
+                <li>Quel genre de chien/chat veulent il.</li>
+              </ul>
+
+						</div>
+						<img src="" alt="cercle pour montrer le second slider">
+					</div>
+				
+			</div>
+
+		</div>
+
+
+
 
     <div>
       <img src="" alt="">
@@ -290,8 +338,6 @@
     </nav>
 
   </footer>
-  
-
 
 </body>
 </html>

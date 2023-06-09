@@ -1,10 +1,18 @@
 body {
-  font-family: sans-serif;
-  font-size: $size-text;
-  line-height: 1.5;
-  color: $c-text;
-}
-
-.title {
-  color: $c-alt;
-}
+    font-family: 'Nunito', sans-serif;
+    font-size: $sizeTel-txt;
+    line-height: 1.4;
+    color: $c-text;
+  }
+  
+  h1{
+  font-size: $sizeTel-un;
+  }
+  
+  h2{
+  font-size: $sizeTel-dx;
+  }
+  
+  h3{
+  font-size: $sizeTel-trs;
+  }
