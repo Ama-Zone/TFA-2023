@@ -4,6 +4,7 @@ body {
     line-height: 1.4;
     color: $c-text;
     background-color: $c-bg;
+    
   }
   
   h1{
@@ -24,6 +25,33 @@ body {
    
   }
 
+  
+
+  .img__chat{
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid $c-deco;
+  }
+
+  .chat{
+    max-width: 100%;
+    padding: auto;
+    display: flex;
+    
+  }
+
+  .chat p {
+    background-color: $c-deco;
+    max-width: 40%;
+    border-radius: 20px;
+    padding: 12px 20px 8px;
+    margin-left: 20px;
+
+  }
+
+body section{
+  padding: 20px 10px;
+}
   
 
 

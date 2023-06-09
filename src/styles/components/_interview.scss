@@ -1,0 +1,23 @@
+
+.inter__img{
+    height: 60px;
+    border-radius: 50px;
+  }
+
+.interview--quest , .interview--repon{
+    display: flex;
+    margin-top: 40px;
+}
+
+.interview--quest p, .interview--repon p {
+    background-color: $c-deco;
+    max-width: 50%;
+    border-radius: 20px;
+    padding: 15px 23px 11px;
+    margin: 0 20px;
+}
+
+.interview--repon p{
+    background-color: $c-text;
+    color: $c-bg;
+}
