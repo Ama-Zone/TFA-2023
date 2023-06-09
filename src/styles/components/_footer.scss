@@ -1,6 +1,7 @@
 /* footer */
 
 .footer{
+    margin-top: 100px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -32,13 +33,31 @@
 }
 
 .navfo__liste--li a, .footer__info a {
-color: $c-bg;
+color: $c-deco;
 text-decoration: none;
+
 padding: 5px;
 border-radius: 10px;
+}
+
+.navfo__liste--li{
+    
+list-style-type: none;
 }
 
 .navfo__liste--li a:hover, .footer__info a:hover:not(.footer__info--nohover) {
     background-color: $c-deco;
     color: $c-text;
+}
+
+.navfo__liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 32px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 16px;
+    width: max-content;
 }

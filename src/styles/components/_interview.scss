@@ -6,7 +6,7 @@
 
 .interview--quest , .interview--repon{
     display: flex;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .interview--quest p, .interview--repon p {
@@ -17,7 +17,32 @@
     margin: 0 20px;
 }
 
+.interview--quest img {
+    border: 1px solid $c-deco;
+}
+
+.interview--repon img{
+    border: 1px solid $c-text;
+}
+
 .interview--repon p{
     background-color: $c-text;
     color: $c-bg;
+}
+
+.interview__contenue{
+    margin: 57px 0 80px 0;
+}
+
+
+
+
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1000px) {
+
+    .inter__img{
+        height: 100px;
+        border-radius: 50px;
+      }
+
 }

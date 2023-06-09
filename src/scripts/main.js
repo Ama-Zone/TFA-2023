@@ -49,3 +49,31 @@ const btnPrev = document.querySelector(".slider__btn--prev"),
                 elLast.classList.add("slider__el--show");
             }
         }
+
+
+
+ //date
+
+    let date = new Date().getFullYear();
+    document.getElementById("annee").innerHTML = date;
+
+
+
+
+//menu
+
+    let navButton = document.querySelector(".menu");
+
+
+navButton.addEventListener("click", toggleNavigation);
+
+function toggleNavigation(){
+    if(!document.body.hasAttribute("data-menu")){
+        document.body.setAttribute("data-menu", true);
+    }else{
+        document.body.removeAttribute("data-menu");
+    }
+}
+
+
+

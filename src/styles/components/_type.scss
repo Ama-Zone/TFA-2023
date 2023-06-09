@@ -25,6 +25,13 @@ body {
    
   }
 
+  .tete a {
+    color: $c-deco;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
   
 
   .img__chat{
@@ -46,13 +53,132 @@ body {
     border-radius: 20px;
     padding: 12px 20px 8px;
     margin-left: 20px;
-
+    color: $c-text;
   }
 
 body section{
-  padding: 20px 10px;
+  padding: 0px 10px;
+}
+
+.tete, .interview, .proso{
+  padding-bottom: 40px;
+}
+
+.soustete, .proso, .mpa{
+  padding-top: 40px;
 }
   
 
+.tete img {
+  max-width: 100%;
+}
+
+.soustete p {
+  margin-bottom: 57px;
+}
+
+.typo-gras{ 
+font-size: $sizeTel-txt;
+font-weight: 700;
+}
+  
+.mpa h2 {
+  margin-top: 80px;
+}
+
+.proso h3{
+  margin-top: 80px;
+}
+
+.proso li{
+  margin: 10px;
+}
+
+
+
+/* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
+@media only screen and (min-width:631px){
+
+
+  body {
+    
+    font-size: $sizeTab-txt;
+    
+  }
+  
+  h1{
+  font-size: $sizeTab-un;
+  }
+  
+  h2{
+  font-size: $sizeTab-dx;
+  }
+  
+  h3{
+  font-size: $sizeTab-trs;
+  }
+
+  .tete div,.soustete, .mpa{
+    max-width: 65%;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.interview, .proso div{
+  max-width: 80%;
+  justify-content: center;
+    margin: auto;
+}
+
+
+
+
+}
+
+
+
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1000px) {
+
+
+
+.tete{
+  display: flex;
+  margin-top: 40px;
+}
+
+.tete img {
+   max-width: 50%;
+}
+
+.tete div{
+    margin-left: 80px;
+    
+  
+}
+
+.tete div p{
+  max-width: 60%;
+}
+
+body p, body h3 {
+  max-width: 50%;
+
+}
+
+
+.img__chat{
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid $c-deco;
+}
+.chat p {
+    height: 60px;
+    width: 170px;
+  }
+  
 
   
+
+}

@@ -1,0 +1,165 @@
+header{
+    max-width: 100%;
+    
+    
+    column-gap: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 18px;
+   background-color: $c-text;
+   height: 50px;
+   position: fixed;
+   
+}
+
+
+
+
+.start1{
+    grid-column: 1/-1;
+    
+}
+.nav, .start2{
+    grid-column: 2/-1;
+    
+}
+.menu, .start3{
+    grid-column: 3/-1;
+   
+}
+
+
+
+
+.logo {
+    width: 70px;
+}
+
+
+
+
+
+
+.menu{
+    cursor: pointer;
+    padding: 3px;
+    border: none;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/svg/menu.svg);
+    display: inline;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-color: transparent;
+    color: transparent;
+}
+
+/* MENU MENU */
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    padding-inline-start: 0px;
+    
+   
+    
+}
+.nav{
+    visibility: hidden;
+}
+
+
+body[data-menu] header{
+   background-color: $c-text;
+   height: 300px;
+   
+}
+
+
+
+body[data-menu] .nav {
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    visibility: visible;
+
+    
+}
+
+
+.lien {
+    color: $c-bg;
+    text-decoration: none;
+    font-size: 20px;
+   
+    
+}
+
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1000px) {
+
+    header{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 25fr 1fr;
+        column-gap: 22px;
+        padding-left: 18px;
+        padding-right: 18px;
+        z-index: 20;
+       background-color: $c-text;
+       height: 80px;
+       position: fixed;
+       
+    }
+
+
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+
+    .nav{
+        visibility: visible;
+
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+    }
+
+    .nav__list__li a {
+        text-decoration: none;
+        margin-right: 62px;
+        color: $c-bg;
+        font-size: 22px;
+    }
+
+    .nav {
+        grid-column: 2;
+        grid-row: 1;
+        
+        padding: 10px;
+        border-radius: 20px 0px;
+        height: 70px;
+
+
+ }
+
+}
