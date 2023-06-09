@@ -1,0 +1,44 @@
+/* footer */
+
+.footer{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.lien--footer{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    display: flex;
+    padding-inline-start: 10px;
+    justify-content: center;
+}
+
+.footer__info {
+    padding: 5px 0 5px 0;
+    text-align: center;
+    font-size: 20px;
+     font-weight: normal;
+    text-decoration: none;
+}
+
+.footer__info p{
+    width: 100%;
+}
+
+.footer__info--logodwm{
+    height: 40px;
+    width: 60px;
+}
+
+.navfo__liste--li a, .footer__info a {
+color: $c-bg;
+text-decoration: none;
+padding: 5px;
+border-radius: 10px;
+}
+
+.navfo__liste--li a:hover, .footer__info a:hover:not(.footer__info--nohover) {
+    background-color: $c-deco;
+    color: $c-text;
+}

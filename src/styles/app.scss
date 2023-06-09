@@ -1,6 +1,5 @@
+@use 'normalize';
 @import 'utils/variables';
 @import 'components/type';
-
-.school-img {
-    width: 320px;
-}
+@import 'components/footer';
+@import 'components/slider';

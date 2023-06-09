@@ -3,6 +3,7 @@ body {
     font-size: $sizeTel-txt;
     line-height: 1.4;
     color: $c-text;
+    background-color: $c-bg;
   }
   
   h1{
@@ -16,3 +17,14 @@ body {
   h3{
   font-size: $sizeTel-trs;
   }
+
+  .tete, .proso, .footer{
+    background-color: $c-text;
+    color: $c-bg;
+   
+  }
+
+  
+
+
+  
