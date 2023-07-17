@@ -1,0 +1,36 @@
+
+
+.liste--el a{
+    color: #FFD500;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.credits{
+    background-color: $c-text;
+}
+
+.credits--section{
+    background-color: $c-text;
+    color: $c-bg;
+
+}
+
+.credits--footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media only screen and (min-width:1000px) {
+
+    .credits--section{
+
+        margin: 0 0 0 200px;
+    }
+
+
+}
+

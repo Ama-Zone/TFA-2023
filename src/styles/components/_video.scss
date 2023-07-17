@@ -1,0 +1,27 @@
+video{
+    width: 100%;
+    
+  }
+
+
+  .video--footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+  .video--header, .credits--header{
+    position: relative;
+  }
+
+
+  @media only screen and (min-width:1000px) {
+
+    
+
+    video{
+        width: 50vw;
+        
+    }
+  }

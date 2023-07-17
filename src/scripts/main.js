@@ -64,19 +64,33 @@ const btnPrev = document.querySelector(".slider__btn--prev"),
 
 //menu
 
+
     let navButton = document.querySelector(".menu");
 
 
-navButton.addEventListener("click", toggleNavigation);
+    navButton.addEventListener("click", toggleNavigation);
 
-function toggleNavigation(){
-    if(!document.body.hasAttribute("data-menu")){
-        document.body.setAttribute("data-menu", true);
-    }else{
-        document.body.removeAttribute("data-menu");
+    function toggleNavigation(){
+        if(!document.body.hasAttribute("data-menu")){
+            document.body.setAttribute("data-menu", true);
+        }else{
+            document.body.removeAttribute("data-menu");
+        }
     }
-}
+    
+        let links = document.querySelector(".nav__list");
 
+        if(links){
+        links.addEventListener("click", MenuList);
+
+            function MenuList (){
+                if(!document.body.hasAttribute("data-menu")){
+                    document.body.setAttribute("data-menu", false);
+                } else {
+                    document.body.removeAttribute("data-menu");
+                }
+            }
+        }
 
 
 gsap.timeline({
@@ -90,3 +104,8 @@ gsap.timeline({
   })
     .from(".midsole",  { y: innerHeight * 1.5 })
     .from(".outsole", { y: innerHeight * 1.5 });
+
+
+
+
+    

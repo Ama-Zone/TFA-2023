@@ -1,13 +1,8 @@
 header{
-    max-width: 100%;
-    
-    
     column-gap: 18px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 18px;
    background-color: $c-text;
-   height: 50px;
+   height: 60px;
+   width: 100vw;
    position: fixed;
    
 }
@@ -15,27 +10,24 @@ header{
 
 
 
-.start1{
-    grid-column: 1/-1;
-    
-}
-.nav, .start2{
-    grid-column: 2/-1;
-    
-}
-.menu, .start3{
-    grid-column: 3/-1;
-   
-}
 
 
 
 
 .logo {
-    width: 70px;
+    width: 65px;
+    position: absolute;
+    top: 14px;
+    left: 18px;
 }
 
 
+.text--indent{
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: -999px;
+    display:none;
+}
 
 
 
@@ -45,15 +37,37 @@ header{
     padding: 3px;
     border: none;
     background-repeat: no-repeat;
-    background-image: url(../../assets/images/svg/menu.svg);
+    background-image: url(../assets/images/svg/menu.svg);
     display: inline;
-    height: 40px;
+    height: auto;
     width: 40px;
     justify-content: center;
     align-items: center;
     background-size: contain;
     background-color: transparent;
-    color: transparent;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    
+    
+}
+
+body[data-menu] .menu:active {
+    transform: rotate(180deg);
+}
+
+body[data-menu] .menu {
+    background-image: url(../assets/images/svg/croix.svg);
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    stroke-width: 5;
+    stroke-linecap: square;
+  
+    transform: rotate(180deg);
+    transition: stroke 0.4s ease-out, transform 0.4s ease-in-out;
+
 }
 
 /* MENU MENU */
@@ -66,12 +80,17 @@ header{
     margin-right: auto;
     vertical-align: middle;
     padding-inline-start: 0px;
-    
-   
-    
+    text-align: center;
+    margin-top: 45px;
 }
+
+.nav__list--li{
+    margin-bottom: 20px;
+}
+
 .nav{
     visibility: hidden;
+    
 }
 
 
@@ -100,6 +119,7 @@ body[data-menu] .nav {
     color: $c-bg;
     text-decoration: none;
     font-size: 20px;
+
    
     
 }
@@ -109,11 +129,7 @@ body[data-menu] .nav {
 
     header{
         max-width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 25fr 1fr;
-        column-gap: 22px;
-        padding-left: 18px;
-        padding-right: 18px;
+        
         z-index: 20;
        background-color: $c-text;
        height: 80px;
@@ -121,11 +137,27 @@ body[data-menu] .nav {
        
     }
 
-
-    .logo {
-        grid-column: 1;
-        grid-row: 1;
+    body[data-menu] .nav {
+        display: inherit;
+        height: inherit;
+        margin-top: inherit;
+       
+    
+        
     }
+
+    body[data-menu] header{
+        height: inherit;
+        
+     }
+
+
+    .logo{
+        width: 75px;
+        top: 20px;
+    }
+
+    
 
 
     .nav{
@@ -141,25 +173,20 @@ body[data-menu] .nav {
         flex-direction: row;
         margin-left: auto;
         margin-right: auto;
-        width: max-content;
+        width: 100vw;
+        justify-content: center;
     }
 
-    .nav__list__li a {
+    .nav__list--li a {
         text-decoration: none;
         margin-right: 62px;
         color: $c-bg;
         font-size: 22px;
     }
 
-    .nav {
-        grid-column: 2;
-        grid-row: 1;
-        
-        padding: 10px;
-        border-radius: 20px 0px;
-        height: 70px;
+    .nav__list {
+        margin-top: 25px;
 
-
- }
+    }
 
 }
