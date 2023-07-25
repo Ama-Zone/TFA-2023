@@ -38,7 +38,7 @@ body {
   .img__chat{
     height: 120px;
     border-radius: 50%;
-    border: 1px solid $c-deco;
+    border: 2px solid $c-deco;
   }
 
   .chat{
@@ -49,13 +49,16 @@ body {
   }
 
   .chat p {
-    background-color: $c-deco;
     max-width: 40%;
     border-radius: 20px;
     padding: 12px 20px 8px;
     margin-left: 20px;
-    color: $c-text;
+    color: $c-bg;
   }
+
+  .chat p {
+    border: 2px solid $c-deco;
+}
 
 section:not(.tete){
   padding-left: 10px;
@@ -72,6 +75,19 @@ section:not(.tete){
 .soustete, .proso, .mpa{
   padding-top: 40px;
 }
+
+.soustete--img{
+  
+  max-width: 100%;
+  text-align:center;
+  margin:auto;
+  display:flex;
+  border-radius: 0 0;
+  margin-bottom: 100px;
+}
+
+
+
   
 
 .tete img {
@@ -98,6 +114,15 @@ font-weight: 700;
 .proso li:not(.slider__btn){
   margin: 10px;
   list-style-image: url(../assets/images/svg/patte.svg);
+}
+
+.icone{
+ height: 100px;
+  max-width: 100%;
+  text-align:center;
+  margin:auto;
+  display:flex;
+  
 }
 
 
@@ -176,10 +201,12 @@ body p, body h3 {
 }
 
 
+
+
 .img__chat{
   height: 200px;
   border-radius: 50%;
-  border: 1px solid $c-deco;
+ 
 }
 .chat p {
     height: 60px;

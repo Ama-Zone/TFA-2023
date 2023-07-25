@@ -11,19 +11,18 @@
 }
 
 .interview--quest p, .interview--repon p {
-    background-color: $c-deco;
     max-width: 55%;
     border-radius: 20px;
     padding: 15px 15px 11px;
     margin: 0 20px;
 }
 
-.interview--quest img {
-    border: 1px solid $c-deco;
+.interview--quest img, .interview--quest p {
+    border: 2px solid $c-deco;
 }
 
 .interview--repon img{
-    border: 1px solid $c-text;
+    border: 2px solid $c-text;
 }
 
 .interview--repon p{

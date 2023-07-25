@@ -84,9 +84,11 @@ body[data-menu] .menu {
     margin-top: 45px;
 }
 
+
 .nav__list--li{
     margin-bottom: 20px;
 }
+
 
 .nav{
     visibility: hidden;
@@ -181,6 +183,10 @@ body[data-menu] .nav {
         margin-right: 62px;
         color: $c-bg;
         font-size: 22px;
+    }
+
+    .nav__list--li{
+    margin-bottom: 0;
     }
 
     .nav__list {
