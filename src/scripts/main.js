@@ -1,6 +1,11 @@
 "use strict";
 import { gsap } from "gsap";
 
+
+let proso = document.querySelector('.proso');
+if (proso) {
+  
+
 const btnPrev = document.querySelector(".slider__btn--prev"),
       btnnext = document.querySelector(".slider__btn--next");
 
@@ -54,10 +59,7 @@ const btnPrev = document.querySelector(".slider__btn--prev"),
 
 
 
- //date
-
-    let date = new Date().getFullYear();
-    document.getElementById("annee").innerHTML = date;
+ 
 
 
 
@@ -104,6 +106,13 @@ gsap.timeline({
   })
     .from(".midsole",  { y: innerHeight * 1.5 })
     .from(".outsole", { y: innerHeight * 1.5 });
+
+}
+
+    //date
+
+    let date = new Date().getFullYear();
+    document.getElementById("annee").innerHTML = date;
 
 
 

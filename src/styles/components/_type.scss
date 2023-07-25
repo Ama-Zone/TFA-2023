@@ -57,8 +57,12 @@ body {
     color: $c-text;
   }
 
-body section{
-  padding: 0px 0px 0px 10px;
+section:not(.tete){
+  padding-left: 10px;
+}
+
+.tete div{
+  padding-left: 10px;
 }
 
 .tete, .interview, .proso{
@@ -78,7 +82,7 @@ body section{
   margin-bottom: 57px;
 }
 
-.typo-gras{ 
+.bold{ 
 font-size: $sizeTel-txt;
 font-weight: 700;
 }
@@ -91,8 +95,9 @@ font-weight: 700;
   margin-top: 80px;
 }
 
-.proso li{
+.proso li:not(.slider__btn){
   margin: 10px;
+  list-style-image: url(../assets/images/svg/patte.svg);
 }
 
 
@@ -131,6 +136,8 @@ font-weight: 700;
   justify-content: center;
     margin: auto;
 }
+
+
 
 
 
@@ -179,7 +186,13 @@ body p, body h3 {
     width: 170px;
   }
   
-
+  body section{
+    padding: 0;
+  }
+  
+  .tete, .interview, .proso{
+    padding-bottom: 0;
+  }
   
 
 }

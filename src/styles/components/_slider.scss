@@ -3,7 +3,7 @@
 .slider{
     width: 80%;
     max-width: 1200px;
-    margin: 100px auto 0;
+    margin: 100px 0;
     position: relative;
 }
 
@@ -14,6 +14,21 @@
 
    
 
+}
+
+.prevbtn,.nextbtn{
+    cursor: pointer;
+    padding: 3px;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.prevbtn{
+    background-image: url(../assets/images/svg/flecheG.svg);
+}
+
+.nextbtn{
+    background-image: url(../assets/images/svg/flecheD.svg);
 }
 
 
@@ -27,7 +42,7 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 185px);
+    grid-template-rows: repeat(4, 160px);
     gap: 2%;
 }
 .slider__content{
@@ -36,6 +51,16 @@
     background-color: $c-text;
     padding: 10px;
     z-index: 10;
+}
+
+.slider__content h3 {
+    max-width: 100%;
+}
+
+.slider__content--list{
+    padding-inline-start: 0;
+    list-style-image: url(../assets/images/svg/patte.svg);
+    
 }
 
 
@@ -76,11 +101,15 @@
 
 .slider__btn button{
     border: none;
-    background-color: $c-deco;
-    color: $c-text;
-    padding: 7px 20px 8px;
+    background-color: transparent;
+    width: 80px;
     cursor: pointer;
-    border-radius: 20px;
+    
+}
+
+.hidden{
+    display: hidden;
+    color: transparent;
 }
 
 /* animation*/
@@ -140,6 +169,10 @@
     
         grid-template-rows: repeat(4, 170px);
         
+    }
+
+    .slider__content--depot li{
+        width: 50%;
     }
 
 }
