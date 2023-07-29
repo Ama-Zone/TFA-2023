@@ -7,8 +7,16 @@
 .interview--quest , .interview--repon{
     display: flex;
     margin-bottom: 40px;
-    justify-content: center;
 }
+
+.interview--quest{
+    justify-content: flex-start;
+}
+
+.interview--repon{
+    justify-content: flex-end;
+}
+
 
 .interview--quest p, .interview--repon p {
     max-width: 55%;

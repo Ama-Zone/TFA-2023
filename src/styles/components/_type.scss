@@ -60,13 +60,14 @@ body {
     border: 2px solid $c-deco;
 }
 
-section:not(.tete){
-  padding-left: 10px;
+.tete div, .soustete div, .interview .interview--resume, .interview h2, .proso h2, .proso h3, .proso p, .mpa{
+  margin-left: 10px;
 }
 
-.tete div{
-  padding-left: 10px;
+.soustete {
+  margin-left: -10px;
 }
+
 
 .tete, .interview, .proso{
   padding-bottom: 40px;
@@ -108,22 +109,47 @@ font-weight: 700;
 }
 
 .proso h3{
-  margin-top: 80px;
+  margin-top: 40px;
+}
+
+.proso h2{
+  margin-bottom: 70px;
 }
 
 .proso li:not(.slider__btn){
-  margin: 10px;
+  margin-bottom: 15px;
   list-style-image: url(../assets/images/svg/patte.svg);
 }
 
-.icone{
- height: 100px;
+.proso__probleme{
+  margin-bottom: 70px;
+}
+
+.proso__formulaire--icone, .proso__probleme--icone {
   max-width: 100%;
   text-align:center;
   margin:auto;
   display:flex;
   
 }
+.proso__probleme--icone {
+  height: 100px;
+}
+.proso__formulaire--icone{
+  height: 120px;
+}
+
+.proso__fleche img{
+  height: 20px;
+  display: none;
+}
+
+.formulaire{
+  margin-left: inherit;
+  height: 560px;
+}
+
+
 
 
 
@@ -149,27 +175,40 @@ font-weight: 700;
   font-size: $sizeTab-trs;
   }
 
-  .tete div,.soustete, .mpa{
-    max-width: 65%;
+  .tete div,.soustete, .mpa, .interview--resume, .proso h2, .interview, .proso div:nth-of-type(5){
+    max-width: 80%;
     justify-content: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
-.interview, .proso div{
-  max-width: 80%;
+.interview--resume{
+  max-width: fit-content;
+  margin: 0;
+}
+
+ .proso div:nth-of-type(1), .proso div:nth-of-type(3){
+   max-width: 60%;
   justify-content: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 
 
 
+.proso ul{
+  padding-inline-start: 0px;
+}
+
+.soustete div, .interview .interview--resume, .interview h2, .proso h3, .proso p{
+  margin-left: 0px;
 
 }
 
-
+}
 
 /* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
 @media only screen and (min-width:1000px) {
@@ -196,7 +235,7 @@ font-weight: 700;
 }
 
 body p, body h3 {
-  max-width: 50%;
+  max-width: 60%;
 
 }
 
@@ -220,6 +259,8 @@ body p, body h3 {
   .tete, .interview, .proso{
     padding-bottom: 0;
   }
-  
+  section:not(.tete) {
+    padding-left: inherit;
+}
 
 }

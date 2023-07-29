@@ -1,5 +1,22 @@
 "use strict";
-import { gsap } from "gsap";
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+var mimiimg = document.querySelector('.soustete__img--mimi');
+if (mimiimg){
+    gsap.from('soustete__img--mimi',{
+        opacity:0,
+        duration:1,
+        scrollTrigger:{
+            trigger:'soustete__img--mimi',
+            start:'top 1300px',
+            end:'center 90%',
+            scrub:0.5,
+            markers: true
+        }
+    });
+} 
 
 
 let proso = document.querySelector('.proso');
