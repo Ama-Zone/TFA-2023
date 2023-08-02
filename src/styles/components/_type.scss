@@ -6,18 +6,28 @@ body {
     background-color: $c-bg;
     margin: 0 0;
   }
+
+  p{
+    width: 97%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   
   h1{
-  font-size: $sizeTel-un;
-  margin: 0 0;
+    font-size: $sizeTel-un;
+    margin: 25px 0 0 0;
   }
   
   h2{
-  font-size: $sizeTel-dx;
+    font-size: $sizeTel-dx;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
   
   h3{
-  font-size: $sizeTel-trs;
+    font-size: $sizeTel-trs;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 
   .tete, .proso, .footer{
@@ -26,128 +36,31 @@ body {
    
   }
 
-  .tete a {
-    color: $c-deco;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 10px;
+  .tete div, .soustete div p, .soustete div h3, .interview .interview--resume, .interview h2, .proso h2, .proso h3, .proso p, .mpa{
+    margin-left: 10px;
+
   }
 
-  
-
-  .img__chat{
-    height: 120px;
-    border-radius: 50%;
-    border: 2px solid $c-deco;
+  .tete, .interview, .proso{
+    padding-bottom: 40px;
   }
 
-  .chat{
-    max-width: 100%;
-    padding: auto;
-    display: flex;
+  .mpa{
+    padding-bottom: 80px;
+  }
+
+  .soustete, .proso, .mpa{
+    padding-top: 40px;
+  }
+
+  .bold{ 
+    font-size: $sizeTel-txt;
+    font-weight: 700;
+  }
     
-  }
-
-  .chat p {
-    max-width: 40%;
-    border-radius: 20px;
-    padding: 12px 20px 8px;
-    margin-left: 20px;
-    color: $c-bg;
-  }
-
-  .chat p {
-    border: 2px solid $c-deco;
-}
-
-.tete div, .soustete div, .interview .interview--resume, .interview h2, .proso h2, .proso h3, .proso p, .mpa{
-  margin-left: 10px;
-}
-
-.soustete {
-  margin-left: -10px;
-}
-
-
-.tete, .interview, .proso{
-  padding-bottom: 40px;
-}
-
-.soustete, .proso, .mpa{
-  padding-top: 40px;
-}
-
-.soustete--img{
-  
-  max-width: 100%;
-  text-align:center;
-  margin:auto;
-  display:flex;
-  border-radius: 0 0;
-  margin-bottom: 100px;
-}
-
-
-
   
 
-.tete img {
-  max-width: 100%;
-}
 
-.soustete p {
-  margin-bottom: 57px;
-}
-
-.bold{ 
-font-size: $sizeTel-txt;
-font-weight: 700;
-}
-  
-.mpa h2 {
-  margin-top: 80px;
-}
-
-.proso h3{
-  margin-top: 40px;
-}
-
-.proso h2{
-  margin-bottom: 70px;
-}
-
-.proso li:not(.slider__btn){
-  margin-bottom: 15px;
-  list-style-image: url(../assets/images/svg/patte.svg);
-}
-
-.proso__probleme{
-  margin-bottom: 70px;
-}
-
-.proso__formulaire--icone, .proso__probleme--icone {
-  max-width: 100%;
-  text-align:center;
-  margin:auto;
-  display:flex;
-  
-}
-.proso__probleme--icone {
-  height: 100px;
-}
-.proso__formulaire--icone{
-  height: 120px;
-}
-
-.proso__fleche img{
-  height: 20px;
-  display: none;
-}
-
-.formulaire{
-  margin-left: inherit;
-  height: 560px;
-}
 
 
 
@@ -164,15 +77,15 @@ font-weight: 700;
   }
   
   h1{
-  font-size: $sizeTab-un;
+    font-size: $sizeTab-un;
   }
   
   h2{
-  font-size: $sizeTab-dx;
+    font-size: $sizeTab-dx;
   }
   
   h3{
-  font-size: $sizeTab-trs;
+    font-size: $sizeTab-trs;
   }
 
   .tete div,.soustete, .mpa, .interview--resume, .proso h2, .interview, .proso div:nth-of-type(5){
@@ -181,32 +94,15 @@ font-weight: 700;
     margin-left: auto;
     margin-right: auto;
     
-}
+  }
+  .soustete div p, .interview .interview--resume, .interview h2, .proso h3, .proso p, .soustete div h3{
+    margin-left: 0px;
 
-.interview--resume{
-  max-width: fit-content;
-  margin: 0;
-}
+  }
 
- .proso div:nth-of-type(1), .proso div:nth-of-type(3){
-   max-width: 60%;
-  justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
-
-.proso ul{
-  padding-inline-start: 0px;
-}
-
-.soustete div, .interview .interview--resume, .interview h2, .proso h3, .proso p{
-  margin-left: 0px;
-
-}
+  /*.mpa h2 {
+    margin-top: 80px;
+  }*/
 
 }
 
@@ -214,53 +110,39 @@ font-weight: 700;
 @media only screen and (min-width:1000px) {
 
 
+  body p:not(.soustete__flex--text p), body h3:not(.soustete__flex--text h3) {
+    max-width: 60%;
 
-.tete{
-  display: flex;
-  margin-top: 40px;
-}
-
-.tete img {
-   max-width: 50%;
-}
-
-.tete div{
-    margin-left: 80px;
-    
-  
-}
-
-.tete div p{
-  max-width: 60%;
-}
-
-body p, body h3 {
-  max-width: 60%;
-
-}
-
-
-
-
-.img__chat{
-  height: 200px;
-  border-radius: 50%;
- 
-}
-.chat p {
-    height: 60px;
-    width: 170px;
   }
-  
+    
   body section{
     padding: 0;
   }
-  
+    
   .tete, .interview, .proso{
     padding-bottom: 0;
   }
-  section:not(.tete) {
+    section:not(.tete) {
     padding-left: inherit;
-}
+  }
+
+
+  .interview, .proso{
+    padding-bottom: 80px;
+  }
+
+  .mpa{
+    padding-bottom: 160px;
+  }
+
+  .soustete, .proso, .mpa{
+    padding-top: 80px;
+  }
+
+  .mpa, .interview--resume, .proso h2, .interview, .proso div:nth-of-type(5){
+    max-width: 80%;
+  }
+
+  
 
 }

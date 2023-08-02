@@ -1,0 +1,49 @@
+  .tete a {
+    color: $c-deco;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .tete img {
+    max-width: 100%;
+  }
+
+
+
+
+
+  /* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
+@media only screen and (min-width:631px){
+
+
+
+}
+
+
+
+
+
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1000px) {
+
+
+  .tete{
+    display: flex;
+    margin-top: 40px;
+  }
+      
+  .tete img {
+    max-width: 50%;
+  }
+      
+  .tete div{
+    margin-left: 80px;
+    padding-top: 40px;
+        
+  }
+      
+  .tete div p{
+    max-width: 60%;
+  }
+}

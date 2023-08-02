@@ -1,0 +1,74 @@
+.proso h3{
+    margin-top: 40px;
+  }
+  
+  .proso h2{
+    margin-bottom: 70px;
+  }
+  
+  .proso li:not(.slider__btn){
+    margin-bottom: 15px;
+    list-style-image: url(../assets/images/svg/patte.svg);
+  }
+  
+  .proso__probleme{
+    margin-bottom: 70px;
+  }
+  
+  .proso__formulaire--icone, .proso__probleme--icone {
+    max-width: 100%;
+    text-align:center;
+    margin:auto;
+    display:flex;
+    
+  }
+  .proso__probleme--icone {
+    height: 100px;
+  }
+  .proso__formulaire--icone{
+    height: 120px;
+  }
+  
+  .proso__fleche img{
+    height: 20px;
+    display: none;
+  }
+  
+  .formulaire{
+    margin-left: inherit;
+    height: fit-content;
+  
+  }
+
+
+
+
+
+
+/* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
+@media only screen and (min-width:631px){
+
+
+
+    .proso div:nth-of-type(1), .proso div:nth-of-type(3){
+        max-width: 60%;
+       justify-content: center;
+         margin-left: auto;
+         margin-right: auto;
+     }
+     
+     .formulaire{
+       margin-left: inherit;
+       height: 560px;
+     }
+     
+     
+     
+     .proso ul{
+       padding-inline-start: 0px;
+     }
+
+     .formulaire h3 {
+        margin-top: 0px;
+    }
+}

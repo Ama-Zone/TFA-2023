@@ -1,22 +1,32 @@
 "use strict";
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-var mimiimg = document.querySelector('.soustete__img--mimi');
+let mimiimg = document.querySelector('.soustete__img--mimi');
 if (mimiimg){
-    gsap.from('soustete__img--mimi',{
+    gsap.from('.soustete__img--mimi',{
         opacity:0,
         duration:1,
         scrollTrigger:{
-            trigger:'soustete__img--mimi',
-            start:'top 1300px',
-            end:'center 90%',
-            scrub:0.5,
+            trigger:'.soustete__img--mimi',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
             markers: true
         }
     });
 } 
+
+let mokaimg = document.querySelector('.soustete__img--moka');
+if  ((window.matchMedia('(min-width: 1000px)').matches) && (mimiimg)) {
+    mimiimg.setAttribute('src','assets/images/mimi.png');
+    mimiimg.setAttribute('srcset','assets/images/2x/mimi2x.png');
+    mokaimg.setAttribute('src','assets/images/photo.png');
+    mokaimg.setAttribute('srcset','assets/images/2x/photo2x.png');
+    
+
+}
 
 
 let proso = document.querySelector('.proso');
@@ -110,19 +120,7 @@ const btnPrev = document.querySelector(".slider__btn--prev"),
                 }
             }
         }
-
-
-gsap.timeline({
-    scrollTrigger: {
-      trigger: ".",
-      start: "",
-      end: "",
-      scrub: true,
-      pin: true
-    }
-  })
-    .from(".midsole",  { y: innerHeight * 1.5 })
-    .from(".outsole", { y: innerHeight * 1.5 });
+    
 
 }
 
