@@ -3,20 +3,281 @@ import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
+
+
+//animation
+
 let mimiimg = document.querySelector('.soustete__img--mimi');
+
+
+        //anim icone
+let icone = gsap.timeline({});
+icone.to('.proso__probleme--icone1',{
+   y:15,
+   duration: 0.7,
+   repeat: 2,
+   yoyo: true,
+   ease: 'linear', 
+   scrollTrigger:{
+    trigger:'.proso__probleme--icone1',
+    start:'top center',
+    end:'50px center',
+    scrub:2.5,
+    markers: true
+}
+});
+
+icone.to('.proso__probleme--icone2',{
+   y:15,
+   duration: 0.7,
+   repeat: 2,
+   yoyo: true,
+   ease: 'linear', 
+   scrollTrigger:{
+    trigger:'.proso__probleme--icone2',
+    start:'top center',
+    end:'50px center',
+    scrub:2.5,
+    markers: true
+}
+});
+
+        //interview
 if (mimiimg){
-    gsap.from('.soustete__img--mimi',{
+    gsap.from('.interview--quest2',{
         opacity:0,
-        duration:1,
+        duration:1.8,
+        y: 70,
         scrollTrigger:{
-            trigger:'.soustete__img--mimi',
+            trigger:'.interview--repon1',
             start:'top center',
             end:'50px center',
             scrub:2.5,
             markers: true
         }
     });
-} 
+    gsap.from('.interview--repon1',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--quest1',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--quest3',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--repon2',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--repon2',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--quest2',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--quest4',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--repon3',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--repon3',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--quest3',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--quest5',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--repon4',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--repon4',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--quest4',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--quest6',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--repon5',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--repon5',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--quest5',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--quest7',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--repon6',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--repon6',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--quest6',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--quest8',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--repon7',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--repon7',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--quest7',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--quest9',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--repon8',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+    gsap.from('.interview--repon8',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--quest8',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+        
+    });
+    gsap.from('.interview--repon9',{
+        opacity:0,
+        duration:1.8,
+        y: 70,
+        scrollTrigger:{
+            trigger:'.interview--quest9',
+            start:'top center',
+            end:'50px center',
+            scrub:2.5,
+            markers: true
+        }
+    });
+}
+
+
+let animtab = document.querySelector('.tete');
+if  ((window.matchMedia('(max-width: 1000px)').matches) && (animtab)) {
+      
+      gsap.from(".tete div", { 
+        duration: 1.5,
+        y: 50,
+        opacity: 0,
+      });
+
+}
+
+let animpc = document.querySelector('.tete');
+if  ((window.matchMedia('(min-width: 1000px)').matches) && (animpc)) {
+      
+      gsap.from(".tete div", { 
+        duration: 1.5,
+        x: 50,
+        opacity: 0,
+      });
+
+}
+
+
+
+
+//images 
 
 let mokaimg = document.querySelector('.soustete__img--moka');
 if  ((window.matchMedia('(min-width: 1000px)').matches) && (mimiimg)) {
@@ -29,10 +290,11 @@ if  ((window.matchMedia('(min-width: 1000px)').matches) && (mimiimg)) {
 }
 
 
+
 let proso = document.querySelector('.proso');
 if (proso) {
   
-
+//slider
 const btnPrev = document.querySelector(".slider__btn--prev"),
       btnnext = document.querySelector(".slider__btn--next");
 

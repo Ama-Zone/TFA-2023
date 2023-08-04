@@ -6,7 +6,6 @@
     text-align:center;
     margin:auto;
     display:flex;
-    border-radius: 0 0;
     margin-bottom: 80px;
   }
 
@@ -15,7 +14,9 @@
   }
   
 
-
+  .soustete__img--moka{
+    transform: scaleX(-1);
+  }
   
   
     
@@ -26,23 +27,30 @@
     margin-bottom: 20px;
   }
 
+  /* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
+@media only screen and (min-width:631px){
+  .soustete--img{
+    border-radius: 10px;
+  }
+
+}
+
+
+
 
    /*DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
 @media only screen and (min-width:1000px){
 
-  .soustete--img{
-
-    width: 500px;
-  }
+  
 
   .soustete__flex{
     display: flex;
     height: max-content;
-    
+    align-items: center;
   }
 
   .soustete__flex{
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 
   .soustete:nth-last-of-type(2){
@@ -50,7 +58,7 @@
   }
 
 
-  .soustete__flex--text p, .soustete__flex--text h3 {
+  .soustete__flex--text2 p, .soustete__flex--text2 h3 {
     width: 70%;
   }
 
@@ -60,18 +68,27 @@
   }
 
   .soustete__flex--text2{
-    margin-left: 100px;
+    margin-left: 60px;
   }
   .soustete--img{
     margin-bottom: 0px;
+    border-radius: 10px;
+    
   }
 
   .soustete__img--mimi{
     margin-bottom: 0px;
+    width: 500px;
+  }
+
+  .soustete__img--moka{
+    width: 400px;
   }
 
   .soustete__flex--text1{
-    margin-left: 100px;
+    margin-left: 10%;
+    padding-right: 60px;
+    width: inherit;
     
   }
   

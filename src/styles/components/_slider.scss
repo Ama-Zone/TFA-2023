@@ -3,7 +3,7 @@
 .slider{
     width: 80%;
     max-width: 1200px;
-    margin-top: 100px;
+    margin-top: 50px;
     position: relative;
     margin-bottom: 0;
     margin-left: 45px;
@@ -169,7 +169,7 @@
 
     .grid{
     
-        grid-template-rows: repeat(4, 111px);
+        grid-template-rows: repeat(4, 100px);
         width: 400px;
         
     }
@@ -226,6 +226,12 @@
     margin-right: auto;
   }
 
+  .formulaire{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+
+    }
   
 }
 
@@ -235,13 +241,24 @@
 
     .grid{
     
-        grid-template-rows: repeat(4, 170px);
+        grid-template-rows: repeat(4, 95px);
         
     }
     
     .formulaire--img{
-        width: 75%;
+        width: 80%;
+        margin-top: 0px;
+        border-radius: 10px;
+        
     }
 
+    .slider__content--list, .slider__content, .slider__content h3{
+        width: 500px;
+    }
+    
+    .formulaire{
 
+    width: 62%;
+    
+    }
 }

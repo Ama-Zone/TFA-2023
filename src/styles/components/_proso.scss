@@ -18,7 +18,10 @@
   .proso__formulaire--icone, .proso__probleme--icone {
     max-width: 100%;
     text-align:center;
-    margin:auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     display:flex;
     
   }
@@ -50,12 +53,9 @@
 
 
 
-    .proso div:nth-of-type(1), .proso div:nth-of-type(3){
-        max-width: 60%;
-       justify-content: center;
-         margin-left: auto;
-         margin-right: auto;
-     }
+  .proso h2 {
+    margin-bottom: 30px;
+}
      
      .formulaire{
        margin-left: inherit;
@@ -71,4 +71,47 @@
      .formulaire h3 {
         margin-top: 0px;
     }
+
+  .proso__probleme, .proso__formulaire{
+    display: flex;
+    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+
+  .proso__formulaire--icone, .proso__probleme--icone {
+    margin-left: 0px;
+    margin-right: 60px;
+    
+    
+  }
+
+  .proso__formulaire--icone{
+    width: 12%;
+    margin-right: 80px;
+  }
+
+
+
+.proso__probleme--icone{
+  width: 15%;
+}
+.proso__probleme {
+  margin-bottom: 0px;
+}
+
+.formulaire--soluce h3{
+  margin-top: 0px;
+}
+
+}
+
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1000px){
+
+
+
+
+
 }

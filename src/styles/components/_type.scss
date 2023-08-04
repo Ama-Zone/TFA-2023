@@ -12,10 +12,14 @@ body {
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  .interview__resume--margin, .proso--margin, .mpa--margin, .tete--margin{
+    margin-bottom: 20px;
+}
   
   h1{
     font-size: $sizeTel-un;
-    margin: 25px 0 0 0;
+    margin: 25px 0 5px 0;
   }
   
   h2{
@@ -109,11 +113,14 @@ body {
 /* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
 @media only screen and (min-width:1000px) {
 
-
-  body p:not(.soustete__flex--text p), body h3:not(.soustete__flex--text h3) {
+  h1{
+    margin: 25px 0 25px 0;
+  }
+  body p:not(.soustete__flex--text p), body h3:not(.soustete__flex--text h3){
     max-width: 60%;
 
   }
+  
     
   body section{
     padding: 0;
@@ -139,10 +146,17 @@ body {
     padding-top: 80px;
   }
 
-  .mpa, .interview--resume, .proso h2, .interview, .proso div:nth-of-type(5){
+  .mpa, .interview--resume, .interview h2, .proso h2, .proso div:nth-of-type(5){
     max-width: 80%;
   }
 
-  
+  .nav__list--li a:hover, .navfo__liste--li a:hover, .footer__info a:hover:not(.footer__info--nohover) {
+    background-color: $c-deco;
+    color: $c-text;
+}
+
+.navfo__liste--li a:focus, .navfo__liste--li a:focus, .footer__info a:focus:not(.footer__info--nohover) {
+  border: 2px solid $c-deco;
+}
 
 }
