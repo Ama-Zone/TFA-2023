@@ -1,415 +1,481 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Présentation AnimaAide - Zone Amandine - DWT - TFA</title>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="fr">
 
-  <meta name="description" content="Présentaion du projet AnimaAide pour le TFA">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="http://amandine-zone.be/projets/tfaaout/">
-  <meta name="twitter:creator" content="@AmandineZone">
-  <meta name="twitter:title" content="Amandine Zone">
-  <meta name="twitter:descritpion" content="Accueil - Zone Amandine - DWT - TFA">
-  <meta name="twitter:image" content="http://amandine-zone.be/projets/tfaaout/assets/images/logo.png" >
-  
-  <meta property="og:site_name" content="Zone Amandine" />
-  <meta property="og:title" content="Zone Amandine" />
-  <meta property="og:description" content="Présentaion du projet AnimaAide pour le TFA" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://amandine-zone.be/projets/tfaaout/" />
-  <meta property="og:image" content="http://amandine-zone.be/projets/tfaaout/assets/images/logo.png" />
-  <meta property="og:image:width" content="1800">
-  <meta property="og:image:height" content="945">
+  <head>
+    <title>Présentation AnimaAide - Zone Amandine - DWT - TFA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Judson&family=Lato:wght@100;300;400;700;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <meta name="description" content="Présentaion du projet AnimaAide pour le TFA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="http://amandine-zone.be/projets/tfaaout/">
+    <meta name="twitter:creator" content="@AmandineZone">
+    <meta name="twitter:title" content="Amandine Zone">
+    <meta name="twitter:descritpion" content="Accueil - Zone Amandine - DWT - TFA">
+    <meta name="twitter:image" content="http://amandine-zone.be/projets/tfaaout/assets/images/logo.png">
 
-  <link rel="stylesheet" href="styles/app.css">
+    <meta property="og:site_name" content="Zone Amandine">
+    <meta property="og:title" content="Zone Amandine">
+    <meta property="og:description" content="Présentaion du projet AnimaAide pour le TFA">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://amandine-zone.be/projets/tfaaout/">
+    <meta property="og:image" content="http://amandine-zone.be/projets/tfaaout/assets/images/logo.png">
+    <meta property="og:image:width" content="1800">
+    <meta property="og:image:height" content="945">
 
-  <script src="scripts/main.js" defer></script>
-</head>
-<body>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Judson&family=Lato:wght@100;300;400;700;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet">
 
-  <header>
+    <link rel="stylesheet" href="styles/app.css">
 
-    <a href="index.html"><img src="assets/images/svg/logo.svg" alt="logo avec le nom AnimaAide" class="logo"></a>
+    <script src="scripts/main.js" defer></script>
+  </head>
 
-            
-    <button class="menu text--indent">menu</button>
-    <nav class="nav">
+  <body>
+
+    <header>
+
+      <a href="index.html"><img src="assets/images/svg/logo.svg" alt="logo avec le nom AnimaAide" class="logo"></a>
+
+      <button class="menu text--indent">menu</button>
+      <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__list--li "><a class="lien" href="#ancre01">Découverte</a></li>
-            <li class="nav__list--li "><a class="lien" href="#ancre02">Interview</a></li>
-            <li class="nav__list--li "><a class="lien" href="#ancre03">Problèmes & Solutions</a></li>
-            <li class="nav__list--li "><a class="lien" href="#ancre04">Développement</a></li>
+          <li class="nav__list--li "><a class="lien lien--active" id="decouv" href="#ancre01">Découverte</a></li>
+          <li class="nav__list--li "><a class="lien lien--active" id="interview" href="#ancre02">Interview</a></li>
+          <li class="nav__list--li "><a class="lien lien--active" id="probl" href="#ancre03">Problèmes & Solutions</a></li>
+          <li class="nav__list--li "><a class="lien lien--active" id="develop" href="#ancre04">Développement</a></li>
         </ul>
-    </nav>
+      </nav>
 
- 
-  </header>
-  <main class="main">
+    </header>
+    
+    <main class="main">
+
+      <section class="tete" id="ancre01">
+        <img src="assets/images/refuge.png" srcset="assets/images/2x/refuge2x.png 2x"
+          alt="une photo du refuge de sans-collier à Perwez" class="tete__img">
+
+        <div>
+          <h1>AnimaAide</h1>
+          <p class="bold tete--margin">&Agrave; la découverte de l’association <a
+              href="https://www.sanscollier.be/index.html">Sans Collier</a> pour la protection des&nbsp;animaux.</p>
+          <p>Elle recueille des&nbsp;animaux abandonnés ou saisis et les&nbsp;soigne.
+            L’association cherche également de nouvelles familles prêtes à accueillir
+            ces&nbsp;animaux. Elle a été créée en 1972 en Belgique et
+            compte deux refuges, à&nbsp;Chastre et à&nbsp;Perwez.
+          </p>
+        </div>
+
+      </section>
 
 
-  <section class="tete" id="ancre01">
-    <img src="assets/images/refuge.png" srcset="assets/images/2x/refuge2x.png 2x" alt="une photo du refuge de sans-collier à Perwez" class="tete__img">
+      <h2 class="hidden">Sous-tête</h2>
+      <section class="soustete">
+        <div class="soustete__flex soustete__flex1 ">
+          <div class="soustete__flex--text soustete__flex--text1">
 
-    <div>
-      <h1>AnimaAide</h1>
-      <p class="bold tete--margin">&Agrave; la découverte de l’association <a href="https://www.sanscollier.be/index.html">Sans Collier</a> pour la protection des&nbsp;animaux.</p>
-      <p>Elle recueille des&nbsp;animaux abandonnés ou saisis et les&nbsp;soigne. 
-        L’association cherche également de nouvelles familles prêtes à accueillir 
-        ces&nbsp;animaux. Elle a été créée en 1972 en Belgique et 
-        compte deux refuges, à&nbsp;Chastre et à&nbsp;Perwez.</p>
-    </div>
-
-  </section>
-
-
-  <section class="soustete">
-    <div class="soustete__flex soustete__flex1 ">
-        <div class="soustete__flex--text soustete__flex--text1">
-          <h3>«&nbsp;Et&nbsp;si on adoptait un chien&#8239;?&nbsp;»&nbsp;, c’est la question que mon père me&nbsp;pose.</h3>
-          <p>N'ayant&nbsp;aucune association en tête, j'ai demandé autour de moi, mais personne
-            n'avait d'idées à me proposer, jusqu'à ce qu'une de mes amies me parle de
-            «Sans&nbsp;Collier» et me la recommande. Je me suis demandée pourquoi je
+            <h3>«&nbsp;Et&nbsp;si on adoptait un chien&#8239;?&nbsp;»&nbsp;, c’est la question que mon père me&nbsp;pose.
+            </h3>
+            <p>N'ayant&nbsp;aucune association en tête, j'ai demandé autour de moi, mais personne
+              n'avait d'idées à me proposer, jusqu'à ce qu'une de mes amies me parle de
+              «Sans&nbsp;Collier» et me la recommande. Je me suis demandée pourquoi je
               n'y avais pas pensé plus tôt car à chaque fois que je passe devant
               le refuge de Chastre, mon père me dit en plaisantant&#8239;:
-              &nbsp;«&nbsp;On adopte un chien&#8239;!&nbsp;»&nbsp;. De plus, J'ai&nbsp;toujours aimé les chats, surtout que j'ai toujours vécu avec&nbsp;eux.
-              Mon&nbsp;choix s'est donc naturellement porté sur une association pour les animaux. Contacter l'association était une épreuve pour&nbsp;moi, 
+              &nbsp;«&nbsp;On adopte un chien&#8239;!&nbsp;»&nbsp;. De plus, J'ai&nbsp;toujours aimé les chats, surtout
+              que j'ai toujours vécu avec&nbsp;eux.
+              Mon&nbsp;choix s'est donc naturellement porté sur une association pour les animaux. Contacter l'association
+              était une épreuve pour&nbsp;moi,
               alors j'ai pris mon courage à deux mains pour envoyer un mail
-              et surtout pour m'y rendre en&nbsp;personne. </p>
+              et surtout pour m'y rendre en&nbsp;personne. 
+            </p>
+          </div>
+          <img src="assets/images/photo2.png" srcset="assets/images/2x/photo22x.png 2x" alt="un chien avec son jouet"
+            class="soustete--img soustete__img--moka">
+
         </div>
 
-        <img src="assets/images/mimi2.png" srcset="assets/images/2x/mimi22x.png 2x" alt="un chat sur un coussin rouge" class="soustete--img soustete__img--mimi" >
-    </div>
-
-    <div class="soustete__flex ">
-
-       
-        <div class="soustete__flex--text soustete__flex--text2">
-          <h3>Et si je les contacte&#8239;?</h3>
-          <p>J'ai&nbsp;contacté l'association le mardi 14&nbsp;février et la réponse 
-            ne s'est pas faite attendre. À peine une heure après l'envoi du mail, 
-            l'association m'avait déjà répondu favorablement. Un rendez-vous a été 
-            fixé pour le jeudi de la même semaine à 14 heures au refuge de&nbsp;Perwez.</p>
-        </div>
-        <img src="assets/images/photo2.png" srcset="assets/images/2x/photo22x.png 2x" alt="un chien avec son jouet" class="soustete--img soustete__img--moka">
-    </div>  
-    
-
-  </section>
+        <div class="soustete__flex ">
 
 
-  <section class="interview"  id="ancre02">
-
-    <h2>Une petite interview&#8239;!</h2>
-
-    <div class="interview__contenu">
-
-      <div class="interview--quest interview--quest1">
-        <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat " class="inter__img">
-        <p>En quoi consiste votre travail&#8239;?</p>
-      </div>
-
-
-      <div class="interview--repon interview--repon1">
-        <p>On&nbsp;répond aux besoins du bien-être animal et on prend en charge 
-          les animaux. On fait bouger les choses pour la protection des&nbsp;animaux.</p>
-        <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x" alt="un chien qui peut être adopté au refuge" class="inter__img ">
-      </div>
-
-
-
-      <div class="interview--quest interview--quest2">
-        <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat" class="inter__img ">
-        <p>Pouvez-vous me décrire le système de&nbsp;l’association&#8239;?</p>
-      </div>
-
-      <div class="interview--repon interview--repon2">
-        <p>On&nbsp;reçoit une plainte par mail, un appel, on lit la plainte, on constate s'il y a maltraitance
-          sur place et on trouve une solution. Si tout va bien, on laisse l’animal au propriétaire sinon on l'amène à&nbsp;l'association.</p>
-          <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x" alt="un chien qui peut être adopté au refuge" class="inter__img">
-      </div>
-
-
-
-      <div class="interview--quest interview--quest3">
-        <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat" class="inter__img ">
-        <p>Comment les adoptions sont-elles gérées&#8239;?</p>
-      </div>
-
-      <div class="interview--repon interview--repon3">
-        <p>Dans&nbsp;25&nbsp;% des cas l’adoption est refusée. D’abord, il y a une entrevue pour cerner 
-          les personnes. Ensuite, le futur&nbsp;propriétaire rencontre le chien et il peut faire une&nbsp;promenade avec. 
-          Si un chien a tapé dans l'oeil d’une famille mais qu’il ne correspond pas au train de vie de 
-          la famille, on la redirige vers un autre chien. Sinon, on organise une rencontre avec le&nbsp;chien.</p>
-          <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x" alt="un chien qui peut être adopté au refuge" class="inter__img">
+          <div class="soustete__flex--text soustete__flex--text2">
+            <h3>Et si je les contacte&#8239;?</h3>
+            <p>J'ai&nbsp;contacté l'association le mardi 14&nbsp;février et la réponse
+              ne s'est pas faite attendre. À peine une heure après l'envoi du mail,
+              l'association m'avait déjà répondu favorablement. Un rendez-vous a été
+              fixé pour le jeudi de la même semaine à 14 heures au refuge de&nbsp;Perwez.
+            </p>
+          </div>
+          <img src="assets/images/mimi2.png" srcset="assets/images/2x/mimi22x.png 2x" alt="un chat sur un coussin rouge"
+            class="soustete--img soustete__img--mimi">
         </div>
 
+      </section>
 
 
-      <div class="interview--quest interview--quest4">
-        <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat" class="inter__img">
-        <p>Comment&nbsp;travaille l'association avec les propriétaires et les familles 
-          adoptives pour assurer le bien-être des animaux&nbsp;adoptés&#8239;? </p>
-      </div>
+      <section class="interview" id="ancre02">
 
-      <div class="interview--repon interview--repon4">
-        <p>Il&nbsp;y&nbsp;a un suivi après l’adoption.
-          Après 3&nbsp;semaines, on envoie un sms aux adoptants. Puis, après environ 3&nbsp;mois, on les appelle 
-          et au cours de l’année, une visite sur place est organisée. On attend plus ou moins un an 
-          pour que le chien ait le temps de trouver ses&nbsp;marques.</p>
-          <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x" alt="un chien qui peut être adopté au refuge" class="inter__img ">
+        <h2>Une petite interview&#8239;!</h2>
+
+        <div class="interview__contenu">
+
+          <div class="interview--quest interview--quest1">
+            <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat "
+              class="inter__img">
+            <p>En quoi consiste votre travail&#8239;?</p>
+          </div>
+
+
+          <div class="interview--repon interview--repon1">
+            <p>On&nbsp;répond aux besoins du bien-être animal et on prend en charge
+              les animaux. On fait bouger les choses pour la protection des&nbsp;animaux.
+            </p>
+            <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x"
+              alt="un chien qui peut être adopté au refuge" class="inter__img ">
+          </div>
+
+
+
+          <div class="interview--quest interview--quest2">
+            <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat"
+              class="inter__img ">
+            <p>Pouvez-vous me décrire le système de&nbsp;l’association&#8239;?
+
+            </p>
+          </div>
+
+          <div class="interview--repon interview--repon2">
+            <p>On&nbsp;reçoit une plainte par mail, un appel, on lit la plainte, on constate s'il y a maltraitance
+              sur place et on trouve une solution. Si tout va bien, on laisse l’animal au propriétaire sinon on l'amène
+              à&nbsp;l'association.
+            </p>
+            <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x"
+              alt="un chien qui peut être adopté au refuge" class="inter__img">
+          </div>
+
+
+
+          <div class="interview--quest interview--quest3">
+            <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat"
+              class="inter__img ">
+            <p>Comment les adoptions sont-elles gérées&#8239;?</p>
+          </div>
+
+          <div class="interview--repon interview--repon3">
+            <p>Dans&nbsp;25&nbsp;% des cas l’adoption est refusée. D’abord, il y a une entrevue pour cerner
+              les personnes. Ensuite, le futur&nbsp;propriétaire rencontre le chien et il peut faire une&nbsp;promenade
+              avec.
+              Si un chien a tapé dans l'oeil d’une famille mais qu’il ne correspond pas au train de vie de
+              la famille, on la redirige vers un autre chien. Sinon, on organise une rencontre avec le&nbsp;chien.
+            </p>
+            <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x"
+              alt="un chien qui peut être adopté au refuge" class="inter__img">
+          </div>
+
+
+
+          <div class="interview--quest interview--quest4">
+            <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat"
+              class="inter__img">
+            <p>Comment&nbsp;travaille l'association avec les propriétaires et les familles
+              adoptives pour assurer le bien-être des animaux&nbsp;adoptés&#8239;? 
+            </p>
+          </div>
+
+          <div class="interview--repon interview--repon4">
+            <p>Il&nbsp;y&nbsp;a un suivi après l’adoption.
+              Après 3&nbsp;semaines, on envoie un sms aux adoptants. Puis, après environ 3&nbsp;mois, on les appelle
+              et au cours de l’année, une visite sur place est organisée. On attend plus ou moins un an
+              pour que le chien ait le temps de trouver ses&nbsp;marques.
+            </p>
+            <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x"
+              alt="un chien qui peut être adopté au refuge" class="inter__img ">
+          </div>
+
+
+
+          <div class="interview--quest interview--quest5">
+            <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat"
+              class="inter__img ">
+            <p>Avez&nbsp;vous déjà eu des problèmes avec des&nbsp;familles&#8239;? </p>
+          </div>
+
+          <div class="interview--repon interview--repon5">
+            <p>Oui,&nbsp;des animaux sont ramenés car ils ont aboyé, ils faisaient leurs besoins à l'intérieur,&nbsp;...
+              Très&nbsp;rarement, la visite ne s’est pas bien&nbsp;passée donc nous avions repris&nbsp;l’animal.
+            </p>
+            <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x"
+              alt="un chien qui peut être adopté au refuge" class="inter__img ">
+          </div>
+
+
+
+          <div class="interview--quest interview--quest6">
+            <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat"
+              class="inter__img ">
+            <p>Quelle&nbsp;est la pire expérience (d’utilisateur) 
+              à propos des adoptions que vous avez&nbsp;vécu&#8239;?
+            </p>
+          </div>
+
+          <div class="interview--repon interview--repon6">
+            <p>Les&nbsp;chien qui sont adoptés et ramenés le lendemain, c’est&nbsp;frustrant.</p>
+            <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x"
+              alt="un chien qui peut être adopté au refuge" class="inter__img ">
+          </div>
+
+
+
+          <div class="interview--quest interview--quest7">
+            <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat"
+              class="inter__img ">
+            <p>Pouvez-vous&nbsp;nous décrire les principales problématiques auxquelles vos employés/collègues
+              sont&nbsp;confrontés&#8239;?
+            </p>
+          </div>
+
+          <div class="interview--repon interview--repon7">
+            <p> Placer&nbsp;les animaux, bien comprendre les personnes, des plaintes incomplètes, les personnes qui
+              portent plainte pour embêter leurs&nbsp;voisins. 
+            </p>
+            <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x"
+              alt="un chien qui peut être adopté au refuge" class="inter__img ">
+          </div>
+
+
+
+          <div class="interview--quest interview--quest8">
+            <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat"
+              class="inter__img ">
+            <p>Avez-vous déjà trouvé des solutions à ce(ces)&nbsp;problème(s)&#8239;?</p>
+          </div>
+
+          <div class="interview--repon interview--repon8">
+            <p>Il&nbsp;faudrait un formulaire à remplir en&nbsp;ligne.</p>
+            <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x"
+              alt="un chien qui peut être adopté au refuge" class="inter__img ">
+          </div>
+
+
+
+          <div class="interview--quest interview--quest9">
+            <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat"
+              class="inter__img">
+            <p> Quel&nbsp;est l’aspect le plus frustrant de votre&nbsp;journée&#8239;?</p>
+          </div>
+
+          <div class="interview--repon interview--repon9">
+            <p>Les&nbsp;chiens reviennent après 24 heures, c’est du temps&nbsp;perdu. </p>
+            <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x"
+              alt="un chien qui peux être adopter au refuge" class="inter__img ">
+          </div>
         </div>
 
 
 
-      <div class="interview--quest interview--quest5">
-        <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat" class="inter__img ">
-        <p>Avez&nbsp;vous déjà eu des problèmes avec des&nbsp;familles&#8239;? </p>
-      </div>
+        <div class="interview--resume">
 
-      <div class="interview--repon interview--repon5">
-        <p>Oui,&nbsp;des animaux sont ramenés car ils ont aboyé, ils faisaient leurs besoins à l'intérieur,&nbsp;...
-          Très&nbsp;rarement, la visite ne s’est pas bien&nbsp;passée donc nous avions repris&nbsp;l’animal.</p>
-          <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x" alt="un chien qui peut être adopté au refuge" class="inter__img ">
+          <p class="interview__resume--margin">Lors&nbsp;de cette interview, plusieurs questions ont fait ressortir un
+            problème.
+            La responsable que j'ai interviewée répétait souvent que les&nbsp;plaintes étaient parfois incomplètes ou que
+            certaines d'entre elles étaient déposées uniquement pour embêter leurs&nbsp;voisins.
+            Elle a déclaré que c'était dommage qu'il n'y ait pas de formulaire en&nbsp;ligne pour les dépôts
+            de&nbsp;plaintes.
+          </p>
+
+          <p>En&nbsp;conclusion, les problématiques sont que les&nbsp;plaintes sont incomplètes,
+            injustement déposées et que certains animaux sont rendus 24 heures après
+            l'adoption. La&nbsp;solution trouvée est donc un formulaire en&nbsp;ligne pour évaluer
+            si la plainte est fondée ou non, ainsi qu'un formulaire pour avoir une première
+            impression des personnes souhaitant adopter. Il sera également demandé un moyen de
+            contacter la personne qui porte&nbsp;plainte, ainsi qu'une explication de&nbsp;la&nbsp;situation.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <section class="proso" id="ancre03">
+
+
+        <h2>Problèmes & solutions</h2>
+        <div class="liste">
+          <div class="proso__probleme">
+            <img src="assets/images/svg/attention.svg" alt="le point d'esclamation dans un triangle" class="proso__probleme--icone proso__probleme--icone1">
+            <div>
+              <h3>Les problématiques identifiées</h3>
+              <ul>
+                <li>Les plaintes incomplètes et injustements déposées</li>
+                <li>Les chiens reviennent 24 heures après l’adoption</li>
+                <li>25&nbsp;% des demandes d’adoption sont refusées</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="proso__fleche">
+            <img src="assets/images/svg/flecheP.svg" alt="flèche vers la droite" class="proso__fleche--img proso__fleche--une">
+            <img src="assets/images/svg/flecheP.svg" alt="flèche vers la droite" class="proso__fleche--img proso__fleche--deux">
+          </div>
+
+          <div class="proso__formulaire">
+            <img src="assets/images/svg/idee.svg" alt="Une ampoule avec des pattes de chat" class="proso__formulaire--icone proso__probleme--icone2">
+            <div>
+              <h3>Les deux formulaires</h3>
+              <ul>
+                <li>Le dépôt de plaintes</li>
+                <li>L’adoption</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
 
-
-      <div class="interview--quest interview--quest6">
-        <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat" class="inter__img ">
-        <p>Quelle&nbsp;est la pire expérience (d’utilisateur) à propos des adoptions que vous avez&nbsp;vécu&#8239;? </p>
-      </div>
-
-      <div class="interview--repon interview--repon6">
-        <p>Les&nbsp;chien qui sont adoptés et ramenés le lendemain, c’est&nbsp;frustrant.</p>
-        <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x" alt="un chien qui peut être adopté au refuge" class="inter__img ">
-      </div>
-
-
-
-      <div class="interview--quest interview--quest7">
-        <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat" class="inter__img ">
-        <p>Pouvez-vous&nbsp;nous décrire les principales problématiques auxquelles vos employés/collègues sont&nbsp;confrontés&#8239;?</p>
-      </div>
-
-      <div class="interview--repon interview--repon7">
-        <p> Placer&nbsp;les animaux, bien comprendre les personnes, des plaintes incomplètes, les personnes qui portent plainte pour embêter leurs&nbsp;voisins.   </p>
-        <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x" alt="un chien qui peut être adopté au refuge" class="inter__img ">
-      </div>
-      
-
-
-      <div class="interview--quest interview--quest8">
-        <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat" class="inter__img ">
-        <p>Avez-vous déjà trouvé des solutions à ce(ces)&nbsp;problème(s)&#8239;?</p>
-      </div>
-
-      <div class="interview--repon interview--repon8">
-      <p>Il&nbsp;faudrait un formulaire à remplir en&nbsp;ligne.</p>
-      <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x" alt="un chien qui peut être adopté au refuge" class="inter__img ">
-      </div>
-
-
-
-      <div class="interview--quest interview--quest9">
-        <img src="assets/images/poupee.jpg" srcset="assets/images/2x/poupee2x.jpg 2x" alt="photo d'un chat" class="inter__img">
-        <p> Quel&nbsp;est l’aspect le plus frustrant de votre&nbsp;journée&#8239;?</p>
-      </div>
-
-      <div class="interview--repon interview--repon9">
-        <p>Les&nbsp;chiens reviennent après 24 heures, c’est du temps&nbsp;perdu. </p>
-        <img src="assets/images/Max.png" srcset="assets/images/2x/Max2x.png 2x" alt="un chien qui peux être adopter au refuge" class="inter__img ">
-      </div>
-    </div>
-
-
-
-    <div class="interview--resume">
-
-      <p class="interview__resume--margin">Lors&nbsp;de cette interview, plusieurs questions ont fait ressortir un problème. 
-        La responsable que j'ai interviewée répétait souvent que les&nbsp;plaintes étaient parfois incomplètes ou que 
-        certaines d'entre elles étaient déposées uniquement pour embêter leurs&nbsp;voisins.
-        Elle a déclaré que c'était dommage qu'il n'y ait pas de formulaire en&nbsp;ligne pour les dépôts de&nbsp;plaintes.</p>
-
-      <p>En&nbsp;conclusion, les problématiques sont que les&nbsp;plaintes sont incomplètes, 
-          injustement déposées et que certains animaux sont rendus 24 heures après 
-          l'adoption. La&nbsp;solution trouvée est donc un formulaire en&nbsp;ligne pour évaluer 
-          si la plainte est fondée ou non, ainsi qu'un formulaire pour avoir une première 
-          impression des personnes souhaitant adopter. Il sera également demandé un moyen de 
-          contacter la personne qui porte&nbsp;plainte, ainsi qu'une explication de&nbsp;la&nbsp;situation.</p>
-      </div>
-  </section>
-
-
-  <section class="proso" id="ancre03">
-
-    
-      <h2>Problèmes & solutions</h2>
-
-      <div class="proso__probleme">
-        <img src="assets/images/svg/attention.svg" alt="le point d'esclamation dans un triangle" class="proso__probleme--icone proso__probleme--icone1">
-        <div>
-          <h3>Les problématiques identifiées</h3>
-
-          <ul>
-            <li>Les plaintes incomplètes et injustements déposées</li>
-            <li>Les chiens reviennent 24 heures après l’adoption</li>
-            <li>25&nbsp;% des demandes d’adoption sont refusées</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="proso__fleche">
-        <img src="assets/images/svg/flecheP.svg" alt="flèche vers la droite">
-        <img src="assets/images/svg/flecheP.svg" alt="flèche vers la droite">
-      </div>
-
-      <div class="proso__formulaire">
-        <img src="assets/images/svg/idee.svg" alt="Une ampoule avec des pattes de chat" class="proso__formulaire--icone proso__probleme--icone2">
-        <div>
-          <h3>Les deux formulaires</h3>
-
-          <ul>
-            <li>Le dépôt de plaintes</li>
-            <li>L’adoption</li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <div class="formulaire">
+        <div class="formulaire">
           <div class="slider">
             <ul class="grid slider__control">
-              <li class="slider__btn slider__btn--prev"><button class="prevbtn"><span class="hidden">prev</span></button></li>
-              <li class="slider__btn slider__btn--next"><button class="nextbtn "><span class="hidden">next</span></button></li>
+              <li class="slider__btn slider__btn--prev"><button class="prevbtn"><span class="hidden">prev</span></button>
+              </li>
+              <li class="slider__btn slider__btn--next"><button class="nextbtn "><span class="hidden">next</span></button>
+              </li>
             </ul>
 
             <div class="slider__list">
-                <div class="grid slider__el slider__el--show">
-                  <div class="slider__content">
-                    <h3 class="title slider__content--title">Pour les dépôts de plaintes</h3>
-                    <ul class="slider__content--list slider__content--depot">
-                      <li>Un moyen de contact;</li>
-                      <li>L'adresse du propriétaire;</li>
-                      <li>Une description de la situation;</li>
-                      <li>Des photos/vidéos des actes de maltraitances en respectant la vie&nbsp;d’autrui (facultatif);</li>
-                      <li>Le nombre d'animaux;</li>
-                      <li>Le genre des animaux.</li>
-                    </ul>
-                  </div>
-                  
+              <div class="grid slider__el slider__el--show">
+                <div class="slider__content">
+                  <h3 class="title slider__content--title">Pour les dépôts de plaintes</h3>
+                  <ul class="slider__content--list slider__content--depot">
+                    <li>Un moyen de contact;</li>
+                    <li>L'adresse du propriétaire;</li>
+                    <li>Une description de la situation;</li>
+                    <li>Des photos/vidéos des actes de maltraitances en respectant la vie&nbsp;d’autrui (facultatif);</li>
+                    <li>Le nombre d'animaux;</li>
+                    <li>Le genre des animaux.</li>
+                  </ul>
                 </div>
+              </div>
 
-
-                <div class="grid slider__el">
-                  <div class="slider__content">
-                    <h3 class="title">Pour l’adoption</h3>
-                    <ul class="slider__content--list">
-                      <li>Le type d'habitation (maison, appartement, ...);</li>
-                      <li>La présence d'un espace extérieur;</li>
-                      <li>Leurs activités;</li>
-                      <li>La présence d'aboiements;</li>
-                      <li>Le nombre d'enfants;</li>
-                      <li>La présence d'autre animaux;</li>
-                      <li>L'espèce de l'animal.</li>
-                    </ul>
-
-                  </div>
-                  
+              <div class="grid slider__el">
+                <div class="slider__content">
+                  <h3 class="title">Pour l’adoption</h3>
+                  <ul class="slider__content--list">
+                    <li>Le type d'habitation (maison, appartement, ...);</li>
+                    <li>La présence d'un espace extérieur;</li>
+                    <li>Leurs activités;</li>
+                    <li>La présence d'aboiements;</li>
+                    <li>Le nombre d'enfants;</li>
+                    <li>La présence d'autre animaux;</li>
+                    <li>L'espèce de l'animal.</li>
+                  </ul>
                 </div>
-              
+              </div>
             </div>
-
           </div>
 
-        <img src="assets/images/kimi2.png" srcset="assets/images/2x/kimi22x.png 2x" alt="Un chat de profil sur un fond gris" class="formulaire--img">
+          <img src="assets/images/kimi2.png" srcset="assets/images/2x/kimi22x.png 2x"
+            alt="Un chat de profil sur un fond gris" class="formulaire--img">
 
+        </div>
+
+
+
+
+        <div class="formulaire--soluce">
+
+          <h3>Solution hypothétique</h3>
+          <p class="bold proso--margin ">Je&nbsp;pense à créer une application qui permet de déposer
+            une plainte en cas de constatation de maltraitance&nbsp;d'animaux.
+          </p>
+
+          <p>Cela&nbsp;permettrait d'avoir des plaintes plus complètes. Des vidéos et des
+            photos pourront être ajoutées pour recueillir des preuves de maltraitances.
+            Un moyen de contacter la personne qui dépose plainte sera également demandé,
+            ainsi qu'une explication de la&nbsp;situation.
+          </p>
+        </div>
+
+
+      </section>
+
+      <section class="mpa" id="ancre04">
+        <div class="mpa__module">
+          <div class="mpa__module--text1">
+            <h2>Modules d&eacute;velopp&eacute;s</h2>
+            <p>Pour&nbsp;déposer&nbsp;plainte, le prénom sera à compléter dans un champ de texte.
+              Le moyen de contact (mail, téléphone, ...) pourra être choisi en cochant celui souhaité puis en
+              remplissant un champ de texte. Un bouton permettra d’ajouter des photos et&nbsp;vidéos.
+            </p>
+          </div>
+
+          <div class="mpa__module--text2">
+            <h2>Présentation</h2>
+            <p>Mon&nbsp;travail sera finalement présenté devant un jury. Pour la présentation, nous avons 6&nbsp;minutes
+              pour
+              expliquer nos projets et comment nous sommes arrivés à nos conclusions.
+              D'abord, nous présentons les problèmes qu’on a identifié grâce aux interviews et
+              un problème qu’on a choisi de résoudre. Pour&nbsp;finir, on explique la solution imaginée
+              à&nbsp;ce&nbsp;problème.
+            </p>
+          </div>
+        </div>
+        <div class="mpa__fin">
+          <img src="assets/images/chiot.png" srcset="assets/images/2x/chiot2x.png 2x" alt="Un chien endormi"
+            class="mpa--img">
+          <div class="mpa__fin--text" >
+            <h2>Pour finir...</h2>
+            <p class="mpa--margin">J'ai&nbsp;choisi une association pour les animaux, alors j'ai pris mon courage à deux
+              mains pour envoyer un mail et
+              surtout pour m'y rendre en personne.
+              J'ai contacté l'association le mardi 14&nbsp;février et un rendez-vous a été fixé pour le jeudi de la
+              même&nbsp;semaine.
+            </p>
+
+            <p class="mpa--margin">Lors&nbsp;de cette interview, j'ai pu identifier des problèmes et y trouver
+              des&nbsp;solutions.
+              Les problématiques sont les suivantes&#8239;: les plaintes sont incomplètes, injustement&nbsp;déposées et
+              certains animaux sont rendus 24&nbsp;heures
+              après&nbsp;l'adoption. 
+            </p>
+
+            <p>La&nbsp;solution la plus adaptée serait un formulaire en&nbsp;ligne pour évaluer si la plainte est fondée
+              ou&nbsp;non.
+              Je pense qu'une application serait utile afin de déposer des&nbsp;plaintes pour que celles-ci soient plus
+              complètes.
+              Cette application comporterait un formulaire qui permettrait de recueillir des informations sur
+              la&nbsp;situation.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+
+      <div class="footer__info">
+        <a href="http://amandine-zone.be" target="_blank"><span>Zone Amandine</span></a>
+        <p class="date">©<span id="annee"></span></p>
+        <a href="http://dwm.re/" class="footer__info--nohover"><img src="assets/images/logo-dwt_light.svg"
+            alt="logo du Site designe web & mobile" class="footer__info--logodwm"></a>
       </div>
 
 
-
-
-     <div class="formulaire--soluce"> 
-
-        <h3>Solution hypothétique</h3>
-        <p class="bold proso--margin ">Je&nbsp;pense à créer une application qui permet de déposer 
-          une plainte en cas de constatation de maltraitance&nbsp;d'animaux.</p>
-
-        <p>Cela&nbsp;permettrait d'avoir des plaintes plus complètes. Des vidéos et des 
-          photos pourront être ajoutées pour recueillir des preuves de maltraitances. 
-          Un moyen de contacter la personne qui dépose plainte sera également demandé, 
-          ainsi qu'une explication de la&nbsp;situation.</p>
-      </div>
-    
-
-  </section>
-
-  <section class="mpa" id="ancre04">
-
-    <div>
-      <h2>Modules développés</h2>
-      <p>Pour&nbsp;déposer&nbsp;plainte, le prénom sera à compléter dans un champ de texte. 
-        Le moyen de contact (mail, téléphone, ...) pourra être choisi en cochant celui souhaité puis en 
-        remplissant un champ de texte. Un bouton permettra d’ajouter des photos et&nbsp;vidéos.</p>
-    </div>
-
-    <div>
-      <h2>Présentation</h2>
-      <p>Mon&nbsp;travail sera finalement présenté devant un jury. Pour la présentation, nous avons 6&nbsp;minutes pour 
-        expliquer nos projets et comment nous sommes arrivés à nos conclusions.
-        D'abord, nous présentons les problèmes qu’on a identifié grâce aux interviews et 
-        un problème qu’on a choisi de résoudre. Pour&nbsp;finir, on explique la solution imaginée à&nbsp;ce&nbsp;problème.
-        </p>
-    </div>
-
-    <div>
-      <h2>Pour finir...</h2>
-      <p class="mpa--margin">J'ai&nbsp;choisi une association pour les animaux, alors j'ai pris mon courage à deux mains pour envoyer un mail et 
-        surtout pour m'y rendre en personne.
-        J'ai contacté l'association le mardi 14&nbsp;février et un rendez-vous a été fixé pour le jeudi de la même&nbsp;semaine.</p>
-        
-        <p class="mpa--margin">Lors&nbsp;de cette interview, j'ai pu identifier des problèmes et y trouver des&nbsp;solutions. 
-        Les problématiques sont les suivantes&#8239;: les plaintes sont incomplètes, injustement&nbsp;déposées et certains animaux sont rendus 24&nbsp;heures 
-        après&nbsp;l'adoption. </p>
-
-        <p>La&nbsp;solution la plus adaptée serait un formulaire en&nbsp;ligne pour évaluer si la plainte est fondée ou&nbsp;non. 
-          Je pense qu'une application serait utile afin de déposer des&nbsp;plaintes pour que celles-ci soient plus complètes.
-        Cette application comporterait un formulaire qui permettrait de recueillir des informations sur la&nbsp;situation.
-
-        </p>
-    </div>
-
-
-  </section>
-  
-  </main>
-
-
-
-  <footer class="footer" >
-
-    <div class="footer__info">
-      <a href="http://amandine-zone.be" target="_blank"><span>Zone Amandine</span></a>
-      <p class="date">©<span id="annee"></span></p>  
-      <a href="http://dwm.re/" class="footer__info--nohover"><img src="assets/images/logo-dwt_light.svg" alt="logo du Site designe web & mobile"  class="footer__info--logodwm"></a>
-    </div>
-    
-
-    <nav class="navfo">
-      <ul class="navfo__liste">
+      <nav class="navfo">
+        <ul class="navfo__liste">
           <li class="navfo__liste--li navfo__liste--credits"><a href="credits.html">Crédits</a></li>
           <li class="navfo__liste--li navfo__liste--ui"><a href="video.html">Vidéo</a></li>
-      </ul>
-  </nav>
+        </ul>
+      </nav>
 
-  </footer>
+    </footer>
 
-</body>
+  </body>
+
 </html>

@@ -1,76 +1,49 @@
+.interview__contenu {
+  margin: 57px 0 80px 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
-.inter__img{
-    height: 60px;
-    border-radius: 50px;
+
+.interview--quest, .interview--repon {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.interview--quest {
+  justify-content: flex-start;
+
+  img, p {
+    border: 2px solid $c-deco;
+  }
+}
+
+.interview--repon {
+  justify-content: flex-end;
+
+  img {
+    border: 2px solid $c-text;
   }
 
-.interview--quest , .interview--repon{
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.interview--quest{
-    justify-content: flex-start;
-}
-
-.interview--repon{
-    justify-content: flex-end;
+  p {
+    background-color: $c-text;
+    color: $c-bg;
+  }
 }
 
 
 .interview--quest p, .interview--repon p {
-    max-width: 55%;
-    border-radius: 20px;
-    padding: 11px 15px;
-    margin: 0 20px;
-    height: fit-content;
-    width: fit-content;
+  max-width: 55%;
+  border-radius: 20px;
+  padding: 11px 15px;
+  margin: 0 20px;
+  height: fit-content;
+  width: fit-content;
 }
 
-.interview--quest img, .interview--quest p {
-    border: 2px solid $c-deco;
-}
-
-
-
-.interview--repon img{
-    border: 2px solid $c-text;
-}
-
-.interview--repon p{
-    background-color: $c-text;
-    color: $c-bg;
-}
-
-.interview__contenu{
-    margin: 57px 0 80px 0;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.img__chat{
-    height: 120px;
-    border-radius: 50%;
-    border: 2px solid $c-deco;
-  }
-
-  .chat{
-    max-width: 100%;
-    padding: auto;
-    display: flex;
-    
-  }
-
-  .chat p {
-    max-width: 40%;
-    border-radius: 20px;
-    padding: 12px 20px 8px;
-    margin-left: 20px;
-    color: $c-bg;
-  }
-
-  .chat p {
-    border: 2px solid $c-deco;
+.inter__img {
+  height: 60px;
+  border-radius: 50px;
 }
 
 
@@ -78,11 +51,11 @@
 
 
 /* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
-@media only screen and (min-width:631px){
-    .interview--resume{
-        max-width: fit-content;
-        margin: 0;
-      }
+@media only screen and (min-width:631px) {
+  .interview--resume {
+    max-width: fit-content;
+    margin: 0;
+  }
 }
 
 
@@ -96,16 +69,16 @@
 /* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
 @media only screen and (min-width:1000px) {
 
-    .inter__img{
-        height: 100px;
-        border-radius: 50px;
-      }
+  .inter__img {
+    height: 100px;
+    border-radius: 50px;
+  }
 
-      .interview__contenu{
-        width: 60%;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
+  .interview__contenu {
+    width: 60%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }

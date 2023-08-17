@@ -1,117 +1,149 @@
-.proso h3{
+.proso {
+
+  h3{
     margin-top: 40px;
   }
-  
-  .proso h2{
+
+  h2{
     margin-bottom: 70px;
   }
-  
-  .proso li:not(.slider__btn){
+
+  .liste h3{
+    margin-left: 30px;
+  }
+
+  li:not(.slider__btn){
     margin-bottom: 15px;
     list-style-image: url(../assets/images/svg/patte.svg);
   }
-  
-  .proso__probleme{
-    margin-bottom: 70px;
-  }
-  
-  .proso__formulaire--icone, .proso__probleme--icone {
-    max-width: 100%;
-    text-align:center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    
-  }
-  .proso__probleme--icone {
+}
+
+.proso__probleme{
+  margin-bottom: 70px;
+
+  &--icone {
     height: 100px;
   }
-  .proso__formulaire--icone{
-    height: 120px;
-  }
+}
+
+.proso__formulaire--icone, .proso__probleme--icone {
+  max-width: 100%;
+  text-align:center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+}
+
+.proso__formulaire--icone{
+  height: 120px;
+}
+
+.proso__fleche img{
+  height: 20px;
+  display: none;
+}
+
+.formulaire{
+  margin-left: inherit;
+  height: fit-content;
+}
   
-  .proso__fleche img{
-    height: 20px;
-    display: none;
-  }
   
-  .formulaire{
-    margin-left: inherit;
-    height: fit-content;
-  
-  }
-
-
-
-
 
 
 /* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
 @media only screen and (min-width:631px){
 
+  .proso {
+      h2 {
+        margin-bottom: 30px;
+      }
+  
+      ul {
+        padding-inline-start: 0px;
+      }
 
-
-  .proso h2 {
-    margin-bottom: 30px;
-}
-     
-     .formulaire{
-       margin-left: inherit;
-       height: 560px;
-     }
-     
-     
-     
-     .proso ul{
-       padding-inline-start: 0px;
-     }
-
-     .formulaire h3 {
-        margin-top: 0px;
+    .liste h3{
+      margin-left: 0px;
     }
-
-  .proso__probleme, .proso__formulaire{
-    display: flex;
-    
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-  }
-
-  .proso__formulaire--icone, .proso__probleme--icone {
-    margin-left: 0px;
-    margin-right: 60px;
-    
-    
-  }
-
-  .proso__formulaire--icone{
-    width: 12%;
-    margin-right: 80px;
-  }
-
-
-
-.proso__probleme--icone{
-  width: 15%;
-}
-.proso__probleme {
-  margin-bottom: 0px;
-}
-
-.formulaire--soluce h3{
-  margin-top: 0px;
-}
-
+    }
+  
+    .formulaire {
+      margin-left: auto;
+      margin-right: auto;
+      height: 560px;
+  
+      h3 {
+        margin-top: 0px;
+      }
+    }
+  
+    .proso__probleme, .proso__formulaire {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80%;
+    }
+  
+    .proso__formulaire--icone, .proso__probleme--icone {
+      margin-left: 0px;
+      margin-right: 60px;
+    }
+  
+    .proso__formulaire--icone {
+      width: 8%;
+      margin-right: 80px;
+    }
+  
+  
+    .proso__probleme {
+      margin-bottom: 0px;
+  
+      &--icone {
+        width: 10%;
+      }
+    }
+  
+    .formulaire--soluce h3 {
+      margin-top: 0px;
+    }
 }
 
 /* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
 @media only screen and (min-width:1000px){
+  
+  .liste{
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .proso__probleme, .proso__formulaire{
+    display: flex; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .proso__fleche--une{
+    margin-bottom: 25px;
+    margin-top: 210px;
+  }
 
+  .proso__formulaire--icone{
+    height: 100px;
+    width: 50px;
+    margin-right: 80px;
+  }
 
+  .proso__probleme--icone{
+    width: 15%;
+  }
 
 }

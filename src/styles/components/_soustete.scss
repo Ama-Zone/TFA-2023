@@ -1,7 +1,6 @@
 
-
-  .soustete--img{
-  
+.soustete{
+  &--img{
     max-width: 100%;
     text-align:center;
     margin:auto;
@@ -9,87 +8,73 @@
     margin-bottom: 80px;
   }
 
-  .soustete__img--mimi{
+  &__img--moka{
     margin-bottom: 60px;
-  }
-  
-
-  .soustete__img--moka{
     transform: scaleX(-1);
   }
-  
-  
-    
-  
-  
-  
-  .soustete p {
+
+  p {
     margin-bottom: 20px;
   }
-
-  /* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
-@media only screen and (min-width:631px){
-  .soustete--img{
-    border-radius: 10px;
-  }
-
 }
-
-
 
 
    /*DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
 @media only screen and (min-width:1000px){
 
-  
+  .soustete{  
+    &__flex{
+      display: flex;
+      height: max-content;
+      align-items: center;
+      margin-bottom: 100px;
 
-  .soustete__flex{
-    display: flex;
-    height: max-content;
-    align-items: center;
-  }
+      &--text2{
+        margin-left: 60px;
+      }
 
-  .soustete__flex{
-    margin-bottom: 100px;
-  }
+      &--text1{
+        margin-left: 10%;
+        padding-right: 60px;
+        width: inherit; 
+      }
 
-  .soustete:nth-last-of-type(2){
-    margin-bottom: 160px;
-  }
+      &:nth-of-type(2){
+        flex-direction: row-reverse;
+      }
+    }
 
+    &:nth-last-of-type(2){
+      margin-bottom: 160px;
+    }
 
-  .soustete__flex--text2 p, .soustete__flex--text2 h3 {
-    width: 70%;
-  }
+    &__flex--text2 p, &__flex--text2 h3 {
+      width: 70%;
+    }
 
-  .soustete__flex:nth-of-type(2){
-    flex-direction: row-reverse;
-    
-  }
+    &--img{
+      margin-bottom: 0px;
+      border-radius: 10px;
+    }
 
-  .soustete__flex--text2{
-    margin-left: 60px;
-  }
-  .soustete--img{
-    margin-bottom: 0px;
-    border-radius: 10px;
-    
-  }
+    &__img--mimi{
+      transform: scaleX(-1);
+      width: 400px;
+    }
 
-  .soustete__img--mimi{
-    margin-bottom: 0px;
-    width: 500px;
-  }
-
-  .soustete__img--moka{
-    width: 400px;
-  }
-
-  .soustete__flex--text1{
-    margin-left: 10%;
-    padding-right: 60px;
-    width: inherit;
-    
+    &__img--moka{
+      width: 500px;
+      margin-bottom: 0px;
+    }
   }
   
+}
+
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1680px){
+
+  .soustete__flex--text1 {
+    margin-left: 20%;
+  }
+
 }

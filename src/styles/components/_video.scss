@@ -1,35 +1,42 @@
-video{
+.video--main {
+  video {
     width: 100%;
-    
+    margin-top: 100px;
+    margin-bottom: 200px;
   }
 
-
-  .video--footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  .none{
+    display: none;
+  }
 }
 
+.video--header, .credits--header {
+  position: relative;
+}
 
-  .video--header, .credits--header{
-    position: relative;
+.video--footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width:1000px) {
+
+  .video--main {
+    position: fixed;
+    text-align: center;
+    top: 120px;
+
+    video {
+      width: 60%;
+      margin-top: 0px;
+    }
+  }
+  
+  .video--footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 
-
-  @media only screen and (min-width:1000px) {
-
-    
-
-    video{
-        width: 50vw;
-        
-    }
-
-    .video--main{
-      width: 100%;
-      position: absolute;
-      text-align: center;
-      top: 120px
-      
-    }
-  }
+}

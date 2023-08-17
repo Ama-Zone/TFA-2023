@@ -15,7 +15,7 @@ body {
 
   .interview__resume--margin, .proso--margin, .mpa--margin, .tete--margin{
     margin-bottom: 20px;
-}
+  }
   
   h1{
     font-size: $sizeTel-un;
@@ -37,12 +37,10 @@ body {
   .tete, .proso, .footer{
     background-color: $c-text;
     color: $c-bg;
-   
   }
 
-  .tete div, .soustete div p, .soustete div h3, .interview .interview--resume, .interview h2, .proso h2, .proso h3, .proso p, .mpa{
+  .tete div, .soustete div p, .soustete div h3, .interview .interview--resume, .interview h2, .proso h2, .proso p, .mpa p, .mpa h3, .formulaire--soluce h3{
     margin-left: 10px;
-
   }
 
   .tete, .interview, .proso{
@@ -53,7 +51,7 @@ body {
     padding-bottom: 80px;
   }
 
-  .soustete, .proso, .mpa{
+  .proso, .mpa{
     padding-top: 40px;
   }
 
@@ -64,20 +62,11 @@ body {
     
   
 
-
-
-
-
-
-
 /* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
 @media only screen and (min-width:631px){
 
-
   body {
-    
     font-size: $sizeTab-txt;
-    
   }
   
   h1{
@@ -92,21 +81,26 @@ body {
     font-size: $sizeTab-trs;
   }
 
-  .tete div,.soustete, .mpa, .interview--resume, .proso h2, .interview, .proso div:nth-of-type(5){
-    max-width: 80%;
+  .tete div, .soustete, .mpa, .interview--resume, .proso h2, .interview, .proso div:nth-of-type(5), .formulaire--soluce{
     justify-content: center;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;  
   }
-  .soustete div p, .interview .interview--resume, .interview h2, .proso h3, .proso p, .soustete div h3{
+
+  .tete div, .mpa, .interview--resume, .proso h2, .interview, .proso div:nth-of-type(5), .formulaire--soluce{
+    max-width: 65%; 
+  }
+  .soustete{
+    max-width: 80%;
+  }
+  .soustete div p, .soustete div h3, .interview .interview--resume, .interview h2, .proso p, .mpa p, .mpa h3, .formulaire--soluce h3{
     margin-left: 0px;
-
   }
+  
 
-  /*.mpa h2 {
-    margin-top: 80px;
-  }*/
+  .soustete--img, .formulaire--img, .mpa--img {
+    border-radius: 10px;
+  }
 
 }
 
@@ -116,11 +110,10 @@ body {
   h1{
     margin: 25px 0 25px 0;
   }
-  body p:not(.soustete__flex--text p), body h3:not(.soustete__flex--text h3){
-    max-width: 60%;
-
-  }
   
+  .proso p, .interview--resume p, .tete p, .soustete p:not(.soustete__flex--text p){
+    max-width: 60%;
+  }
     
   body section{
     padding: 0;
@@ -132,7 +125,6 @@ body {
     section:not(.tete) {
     padding-left: inherit;
   }
-
 
   .interview, .proso{
     padding-bottom: 80px;
@@ -146,17 +138,30 @@ body {
     padding-top: 80px;
   }
 
-  .mpa, .interview--resume, .interview h2, .proso h2, .proso div:nth-of-type(5){
-    max-width: 80%;
+  .interview--resume, .interview h2, .proso h2, .proso div:nth-of-type(5){
+    max-width: 65%;
   }
 
-  .nav__list--li a:hover, .navfo__liste--li a:hover, .footer__info a:hover:not(.footer__info--nohover) {
+  .mpa {
+    max-width: 70%;
+  }
+
+  .nav__list--li a:hover, .navfo__liste--li a:hover, .footer__info a:hover:not(.footer__info--nohover), .tete a:hover{
     background-color: $c-deco;
     color: $c-text;
+  }
+
+  .navfo__liste--li a:focus, .navfo__liste--li a:focus, .footer__info a:focus, .tete a:focus, .nav__list--li a:focus,.footer__info--logodwm:focus{
+    border: 2px solid $c-deco;
+  }
+
 }
 
-.navfo__liste--li a:focus, .navfo__liste--li a:focus, .footer__info a:focus:not(.footer__info--nohover) {
-  border: 2px solid $c-deco;
-}
 
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1660px){
+
+  .proso p, .interview--resume p, .tete p, .soustete p:not(.soustete__flex--text p){
+    max-width: 50%;
+  }
 }

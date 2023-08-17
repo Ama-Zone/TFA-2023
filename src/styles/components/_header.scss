@@ -1,18 +1,11 @@
-header{
+header {
     column-gap: 18px;
-   background-color: $c-text;
-   height: 60px;
-   width: 100vw;
-   position: fixed;
-   z-index: 100;
+    background-color: $c-text;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
 }
-
-
-
-
-
-
-
 
 .logo {
     width: 65px;
@@ -21,18 +14,14 @@ header{
     left: 18px;
 }
 
-
-.text--indent{
+.text--indent {
     white-space: nowrap;
     overflow: hidden;
     text-indent: -999px;
-    display:none;
+    display: none;
 }
 
-
-
-
-.menu{
+.menu {
     cursor: pointer;
     padding: 3px;
     border: none;
@@ -48,8 +37,6 @@ header{
     position: absolute;
     top: 18px;
     right: 18px;
-    
-    
 }
 
 body[data-menu] .menu:active {
@@ -64,45 +51,43 @@ body[data-menu] .menu {
     right: 18px;
     stroke-width: 5;
     stroke-linecap: square;
-  
     transform: rotate(180deg);
     transition: stroke 0.4s ease-out, transform 0.4s ease-in-out;
-
 }
 
 /* MENU MENU */
 
-.nav__list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle;
-    padding-inline-start: 0px;
-    text-align: center;
-    margin-top: 45px;
-}
-
-
-.nav__list--li{
-    margin-bottom: 20px;
-}
-
-
-.nav{
+.nav {
     visibility: hidden;
-    
+
+    .nav__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+        padding-inline-start: 0px;
+        text-align: center;
+        margin-top: 45px;
+
+        .nav__list--li {
+            margin-bottom: 20px;
+
+            .lien {
+                color: $c-bg;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 
-body[data-menu] header{
-   background-color: $c-text;
-   height: 300px;
-   
+body[data-menu] header {
+    background-color: $c-text;
+    height: 300px;
 }
-
-
 
 body[data-menu] .nav {
     display: flex;
@@ -112,93 +97,66 @@ body[data-menu] .nav {
     margin-right: auto;
     margin-top: 32px;
     visibility: visible;
-
-    
 }
 
 
-.lien {
-    color: $c-bg;
-    text-decoration: none;
-    font-size: 20px;
 
-   
-    
-}
 
 /* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
 @media only screen and (min-width:1000px) {
 
-    header{
+    header {
         max-width: 100%;
         z-index: 20;
-       background-color: $c-text;
-       height: auto;
-       position: fixed;
-       top: 0;
-       
+        background-color: $c-text;
+        height: auto;
+        position: fixed;
+        top: 0;
+
+        .logo {
+            width: 75px;
+            top: 20px;
+        }
+
+        .menu {
+            visibility: hidden;
+        }
+
+        .nav {
+            visibility: visible;
+
+            .nav__list {
+                flex-direction: row;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100vw;
+                justify-content: center;
+                margin-top: 25px;
+
+                .nav__list--li {
+                    margin-bottom: 0;
+
+                    a {
+                        text-decoration: none;
+                        margin-right: 62px;
+                        color: $c-bg;
+                        font-size: 22px;
+                        padding: 10px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
     }
 
     body[data-menu] .nav {
         display: inherit;
         height: inherit;
         margin-top: inherit;
-       
-    
-        
     }
 
-    body[data-menu] header{
+    body[data-menu] header {
         height: inherit;
-        
-     }
-
-
-    .logo{
-        width: 75px;
-        top: 20px;
-    }
-
-    
-
-
-    .nav{
-        visibility: visible;
-
-    }
-
-    .menu {
-        visibility: hidden;
-    }
-
-    .nav__list {
-        flex-direction: row;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100vw;
-        justify-content: center;
-    }
-
-    .nav__list--li a {
-        text-decoration: none;
-        margin-right: 62px;
-        color: $c-bg;
-        font-size: 22px;
-        padding: 10px;
-        border-radius: 10px;
-    }
-
-    
-
-
-
-    .nav__list--li{
-    margin-bottom: 0;
-    }
-
-    .nav__list {
-        margin-top: 25px;
-
     }
 
 }

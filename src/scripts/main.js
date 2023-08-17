@@ -1,9 +1,10 @@
-"use strict";
+'use strict';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-
+let proso = document.querySelector('.proso');
+if (proso) {
 
 //animation
 
@@ -14,8 +15,9 @@ let mimiimg = document.querySelector('.soustete__img--mimi');
 let icone = gsap.timeline({});
 icone.to('.proso__probleme--icone1',{
    y:15,
-   duration: 0.7,
+   duration: 0.9,
    repeat: 2,
+   scale: 1.2,
    yoyo: true,
    ease: 'linear', 
    scrollTrigger:{
@@ -23,14 +25,14 @@ icone.to('.proso__probleme--icone1',{
     start:'top center',
     end:'50px center',
     scrub:2.5,
-    markers: true
+    markers: false
 }
 });
-
 icone.to('.proso__probleme--icone2',{
    y:15,
-   duration: 0.7,
+   duration: 0.9,
    repeat: 2,
+   scale: 1.2,
    yoyo: true,
    ease: 'linear', 
    scrollTrigger:{
@@ -38,9 +40,12 @@ icone.to('.proso__probleme--icone2',{
     start:'top center',
     end:'50px center',
     scrub:2.5,
-    markers: true
+    markers: false
 }
 });
+
+
+
 
         //interview
 if (mimiimg){
@@ -53,7 +58,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--repon1',{
@@ -65,7 +70,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--quest3',{
@@ -77,7 +82,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--repon2',{
@@ -89,7 +94,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--quest4',{
@@ -101,7 +106,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--repon3',{
@@ -113,7 +118,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--quest5',{
@@ -125,7 +130,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--repon4',{
@@ -137,7 +142,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--quest6',{
@@ -149,7 +154,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--repon5',{
@@ -161,7 +166,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--quest7',{
@@ -173,7 +178,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--repon6',{
@@ -185,7 +190,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--quest8',{
@@ -197,7 +202,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--repon7',{
@@ -209,7 +214,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--quest9',{
@@ -221,7 +226,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
     gsap.from('.interview--repon8',{
@@ -233,7 +238,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
         
     });
@@ -246,7 +251,7 @@ if (mimiimg){
             start:'top center',
             end:'50px center',
             scrub:2.5,
-            markers: true
+            markers: false
         }
     });
 }
@@ -255,7 +260,7 @@ if (mimiimg){
 let animtab = document.querySelector('.tete');
 if  ((window.matchMedia('(max-width: 1000px)').matches) && (animtab)) {
       
-      gsap.from(".tete div", { 
+      gsap.from('.tete div', { 
         duration: 1.5,
         y: 50,
         opacity: 0,
@@ -266,9 +271,9 @@ if  ((window.matchMedia('(max-width: 1000px)').matches) && (animtab)) {
 let animpc = document.querySelector('.tete');
 if  ((window.matchMedia('(min-width: 1000px)').matches) && (animpc)) {
       
-      gsap.from(".tete div", { 
+      gsap.from('.tete div', { 
         duration: 1.5,
-        x: 50,
+        x: 100,
         opacity: 0,
       });
 
@@ -278,35 +283,42 @@ if  ((window.matchMedia('(min-width: 1000px)').matches) && (animpc)) {
 
 
 //images 
-
+let chiot = document.querySelector('.mpa--img')
+let flecheDeux = document.querySelector('.proso__fleche--deux')
+let flecheUn = document.querySelector('.proso__fleche--une')
 let mokaimg = document.querySelector('.soustete__img--moka');
 if  ((window.matchMedia('(min-width: 1000px)').matches) && (mimiimg)) {
     mimiimg.setAttribute('src','assets/images/mimi.png');
     mimiimg.setAttribute('srcset','assets/images/2x/mimi2x.png');
     mokaimg.setAttribute('src','assets/images/photo.png');
     mokaimg.setAttribute('srcset','assets/images/2x/photo2x.png');
-    
+    chiot.setAttribute('src','assets/images/chiot2.png')
+    chiot.setAttribute('srcset','assets/images/2x/chiot22x.png')
+    flecheUn.style.display = 'block';
+    flecheDeux.style.display = 'block';
+
 
 }
 
 
 
-let proso = document.querySelector('.proso');
-if (proso) {
+
+
+
   
 //slider
-const btnPrev = document.querySelector(".slider__btn--prev"),
-      btnnext = document.querySelector(".slider__btn--next");
+const btnPrev = document.querySelector('.slider__btn--prev'),
+      btnnext = document.querySelector('.slider__btn--next');
 
-      btnnext.addEventListener("click", next);
-      btnPrev.addEventListener("click", prev);
+      btnnext.addEventListener('click', next);
+      btnPrev.addEventListener('click', prev);
       
       //touche clavier
 
-      document.addEventListener("keydown" ,function(e){
-          if (e.code == "ArrowLeft"){
+      document.addEventListener('keydown' ,function(e){
+          if (e.code == 'ArrowLeft'){
               prev();
-          }else if (e.code == "ArrowRight"){
+          }else if (e.code == 'ArrowRight'){
             next();
           }
       }); 
@@ -315,16 +327,16 @@ const btnPrev = document.querySelector(".slider__btn--prev"),
 
       function next(){
 
-        let elShow = document.querySelector(".slider__el--show"),
+        let elShow = document.querySelector('.slider__el--show'),
             elnext = elShow.nextElementSibling;
 
-            elShow.classList.remove("slider__el--show");
+            elShow.classList.remove('slider__el--show');
 
             if(elnext){
-                elnext.classList.add("slider__el--show");
+                elnext.classList.add('slider__el--show');
             }else{
                 let elfirst = elShow.parentNode.firstElementChild;
-                elfirst.classList.add("slider__el--show");
+                elfirst.classList.add('slider__el--show');
             }
 
             
@@ -333,16 +345,16 @@ const btnPrev = document.querySelector(".slider__btn--prev"),
 
       function prev(){
 
-        let elShow = document.querySelector(".slider__el--show"),
+        let elShow = document.querySelector('.slider__el--show'),
             elPrev = elShow.previousElementSibling;
 
-            elShow.classList.remove("slider__el--show");
+            elShow.classList.remove('slider__el--show');
 
             if(elPrev){
-                elPrev.classList.add("slider__el--show");
+                elPrev.classList.add('slider__el--show');
             }else{
                 let elLast = elShow.parentNode.lastElementChild;
-                elLast.classList.add("slider__el--show");
+                elLast.classList.add('slider__el--show');
             }
         }
 
@@ -356,42 +368,99 @@ const btnPrev = document.querySelector(".slider__btn--prev"),
 //menu
 
 
-    let navButton = document.querySelector(".menu");
+    let navButton = document.querySelector('.menu');
 
 
-    navButton.addEventListener("click", toggleNavigation);
+    navButton.addEventListener('click', toggleNavigation);
 
     function toggleNavigation(){
-        if(!document.body.hasAttribute("data-menu")){
-            document.body.setAttribute("data-menu", true);
+        if(!document.body.hasAttribute('data-menu')){
+            document.body.setAttribute('data-menu', true);
         }else{
-            document.body.removeAttribute("data-menu");
+            document.body.removeAttribute('data-menu');
         }
     }
     
-        let links = document.querySelector(".nav__list");
+        let links = document.querySelector('.nav__list');
 
         if(links){
-        links.addEventListener("click", MenuList);
+        links.addEventListener('click', MenuList);
 
             function MenuList (){
-                if(!document.body.hasAttribute("data-menu")){
-                    document.body.setAttribute("data-menu", false);
+                if(!document.body.hasAttribute('data-menu')){
+                    document.body.setAttribute('data-menu', false);
                 } else {
-                    document.body.removeAttribute("data-menu");
+                    document.body.removeAttribute('data-menu');
                 }
             }
         }
     
+
+    // navigation active au scroll
+
+    if  ((window.matchMedia('(min-width: 1000px)').matches) && (mimiimg)){
+
+    
+
+    window.couleur = function(){
+
+        let decouverte = document.getElementById('decouv');
+        let interview = document.getElementById('interview');
+        let probleme = document.getElementById('probl');
+        let develop = document.getElementById('develop');
+    
+        let decouverteDiv = document.getElementById('ancre01');
+        let interviewDiv = document.getElementById('ancre02');
+        let problemeDiv = document.getElementById('ancre03');
+        let developDiv = document.getElementById('ancre04');
+    
+        let decouverteCal = decouverteDiv.offsetHeight+decouverteDiv.offsetTop;
+        let interviewCal = interviewDiv.offsetHeight+interviewDiv.offsetTop;
+        let problemeCal = problemeDiv.offsetHeight+problemeDiv.offsetTop;
+        let developCal = developDiv.offsetHeight+developDiv.offsetTop;
+        
+        let position = window.scrollY;
+    
+        if(position<decouverteCal){   
+            decouverte.style.border = 'thin solid #FFD500';
+            
+         } else
+            decouverte.style.border = 'thin solid #091423';
+            
+         
+         
+         if (position>decouverteCal && position<interviewCal){
+            interview.style.border = 'thin solid #FFD500';
+            
+         } else
+            interview.style.border = 'thin solid #091423';
+           
+         
+         
+         if (position>interviewCal && position<problemeCal){
+            probleme.style.border = 'thin solid #FFD500';
+           
+         } else
+            probleme.style.border = 'thin solid #091423';
+             
+         
+        if (position>problemeCal && position<developCal){
+            develop.style.border = 'thin solid #FFD500';
+            
+        } else
+            develop.style.border = 'thin solid #091423';
+            
+        }
+         
+          window.addEventListener('scroll' , couleur);
+        }
 
 }
 
     //date
 
     let date = new Date().getFullYear();
-    document.getElementById("annee").innerHTML = date;
+    document.getElementById('annee').innerHTML = date;
 
 
 
-
-    

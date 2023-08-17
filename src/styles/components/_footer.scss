@@ -1,44 +1,40 @@
 /* footer */
 
-.footer{
-   
+.footer{ 
     padding-top: 10px;
     padding-bottom: 10px;
-   
-}
 
-.footer a{
-    font-size: 18px;
-}
+    a{
+        font-size: 18px;
+    }
 
+    &__info {
+        padding: 5px 0 5px 0;
+        text-align: center;
+        font-size: 18px;
+         font-weight: normal;
+        text-decoration: none;
+    
+        p {
+            width: 100%;
+            max-width: inherit;
+        }
 
-.footer__info {
-    padding: 5px 0 5px 0;
-    text-align: center;
-    font-size: 18px;
-     font-weight: normal;
-    text-decoration: none;
-}
-
-.footer__info p{
-    width: 100%;
-}
-
-.footer__info--logodwm{
-    height: 40px;
-    width: 60px;
+        &--logodwm{
+            height: 40px;
+            width: 60px;
+        }
+    }
 }
 
 .navfo__liste--li a, .footer__info a {
 color: $c-deco;
 text-decoration: none;
-
 padding: 10px;
 border-radius: 10px;
 }
 
 .navfo__liste--li{
-    
 list-style-type: none;
 text-align: center;
 }
@@ -60,11 +56,7 @@ text-align: center;
     width: max-content;
     margin-bottom: 0;
 }
-
-.footer__info p {
-    width: 100%;
-    max-width: inherit;
-    }
+ 
     
 
     @media only screen and (min-width:1000px) {
@@ -81,20 +73,20 @@ text-align: center;
            margin-left: auto;
            margin-right: auto;
            
-        }
-        .footer__info--logodwm{
+           &--logodwm{
             width: inherit;
             height: 25px;
-        }
+            }
 
-        .footer__info a span{
-            width: max-content;
-            display: flex;
-        }
-
-        .footer__info p {
+           p {
             margin-top: 10px;
             margin-bottom: 0;
             }
+
+            a span{
+                width: max-content;
+                display: flex;
+            }
+        }
 
     }
